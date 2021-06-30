@@ -1,105 +1,182 @@
-
 body{
-    font-family: georgia,times,serif;
-    color: #333;
-    font-size: 1.2rem;
-    line-height: 1.6em;
-    margin: 0;
-}
-
-h1{
-    font-size:3rem;
-    line-height: 1.3em;
-}
-
-.title{
-    padding-top: 25rem;
-    color: white;
-}
-
-.containerPosterFilms{
-    height: 558px;
-    margin: 5px;
-    border: 2px solid black;
-    background-color: #394439;
-    border-color: #d8d8d8;
-    border-radius: 4px;
+    max-width: 1440px;
+    padding:0;
+    margin:0;
     display: flex;
-    padding: 20px
+    flex-wrap: wrap;
+    font-family: 'Montserrat', sans-serif;
 }
 
-.posterFilms{
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    padding: 0;
+header{
+    background-color: #333;
+    flex: 100%
+}
+
+main{
+    background-color: #3D534B;
+    flex: 80%;
+    padding-bottom: 30px;
+}
+
+aside{
+    background-color: #3D534B;
+    flex: 20%;
+}
+
+footer{
     display: flex;
+    flex: 100%;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    color: black;
-    font-size: 18px;  
-}
-
-.imgFilms{
-    align-items: flex-start;
-}
-
-.descriptionFilms{
-    padding-left: 3%;
-}
-
-p{
-    margin-bottom: 1.6em;
-    color: white;  
-    
-}
-
-.container{
-    width: 80%;
-    margin:0 auto;
-    padding-bottom: 2rem;
-}
-
-.header{
-    display: flex;
-    background: #333;
-    color:white;
-    padding: 2rem 0;
-    justify-content: center; 
-    height: 15%;
-
-    position: fixed;
-    left: 0;
-    top: 0;
-    right: 0;
-}
-
-.header a {
-    color: white;
-    text-decoration: none;
-}
-
-.containerLogo{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.totoroPng{
-    height: 100%;
-}
-
-.main{
-    background: #3D534B;
-
-}
-
-.footer{
-    background: #333;
-    padding: 1rem 0;
+    align-content: center;
+    background-color: #B6D96C;
     text-align: center;
-    margin-top: -2rem;
+    height: 100px;
+    color: #3D534B;
+}
+
+footer img{
+    width: 20px;
+    height: 20px;
+}
+
+footer div{
+    flex: 100%;
+}
+
+footer p{
+    height: auto;
+    flex: 100%;
+
+}
+
+.social-media{
+    width: 20px;
+    display: flex;
+    flex: wrap;
+}
+
+#up-media{
+    position: absolute;
+    top: 3%;
+    right: 5%;
+}
+
+#up-media img{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+#ghibli-logo{
+    width: 200px;
+    display: block;
+    margin: auto;
+}
+
+#sortby{
+    border: none;
+    border-radius: 5px;
+    background-color: #B6D96C;
+    width: 190px;
+    height: 20px;
+    padding: 5px;
+    margin-top: 20px;
+    margin-left: 50px;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-weight: 600;
+    color: #3D534B;
 }
 
 
+#sortby span{
+    margin-left: 5px;
+}
+
+#sortby img{
+    margin-left: 120px;
+    margin-top: 5px;
+    width: 10px;
+}
+
+
+#searchbar{
+    margin: auto;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #B6D96C;
+    width: fit-content;
+    padding: 5px;
+}
+
+#search-icon{
+    width: 15px;
+
+}
+
+#search-input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+#filtertext{
+    margin-left: 5%;
+    color: #B6D96C;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.filterbox{
+    margin: auto;
+    width: 200px;
+    height: fit-content;
+    background-color: #b1c3b2ab;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.filterbox p{
+    box-sizing: border-box;
+    background-color: #B6D96C;
+    width: 100%;
+    border-radius: 5px 5px 5px 5px;
+    padding: 3px;
+    text-align: center;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-weight: 600;
+}
+
+.filteritem {
+    display: none;
+    padding: 8px;
+    list-style: none;
+}
+
+.cardscontainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.moviecard{
+    width: 167px;
+    height: 290px;
+    border-radius: 5px;
+    background-color: #b1c3b2ab;
+    margin-top: 30px;
+    margin-left: 80px;
+}
+
+.moviecard p{
+    text-align: center;
+    margin: 5px 5px 0 5px;
+    color: white;
+}
+
+.movie-poster{
+    width: 167px;
+    height: 238px;
+    border-radius: 5px 5px 0 0;
+}
