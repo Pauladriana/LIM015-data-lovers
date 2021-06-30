@@ -4,8 +4,73 @@
     <meta charset="utf-8">
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@300&family=Montserrat&display=swap" rel="stylesheet">
   </head>
   <body>
+    <header>
+      <img src="\src\multimedia\whiteghibli.svg" alt="ghibli-logo" id="ghibli-logo">
+      <div class="social-media" id="up-media">
+      <img src="\src\multimedia\winstagram.svg" alt="instagram-link"><img src="\src\multimedia\wfacebook.svg" alt="facebook-link"><img src="\src\multimedia\wtwitter.svg" alt="twitter-link">
+      </div>
+    </header>
+
+    <aside>
+      <div id="searchbar">
+        <input type="text" id="search-input">
+        <img src="\src\multimedia\wloupe.svg" alt="search-icon" id="search-icon">
+      </div>
+
+      <div id="filtercontainer">
+        <p id="filtertext">FILTER:</p>
+        <div id="directorfilter" class="filterbox">
+          <p>DIRECTORS</p>
+          <ul class="filteritem">
+            <li>director names</li>
+          </ul>
+        </div>
+
+        <div id="productorfilter" class="filterbox">
+          <P>PRODUCERS</P>
+          <ul class="filteritem">
+            <li>productor names</li>
+          </ul>
+        </div>
+
+        <div id="yearfilter" class="filterbox">
+          <p>YEAR</p>
+          <ul class="filteritem">
+            <li>years</li>
+          </ul>
+        </div>
+
+        <div id="scorefilter" class="filterbox">
+          <p>SCORE</p>
+          <ul class="filteritem">
+            <li>scores</li>
+          </ul>
+        </div>
+      </div>
+    </aside>
+
+    <main>
+      <div id="sortby">
+        <span>SORT BY</span><img src="\src\multimedia\down-arrow.svg" alt="down-arrow" id="sort-icon">
+      </div>
+      <div class="cardscontainer">
+      </div>
+    </main>
+
+    <footer>
+      <p>For more information, please visit:</p>
+      <br>
+      <div>
+        <img src="\src\multimedia\ginstagram.svg" alt="instagram-link"><img src="\src\multimedia\gfacebook.svg" alt="facebook-link"><img src="\src\multimedia\gtwitter.svg" alt="twitter-link">
+      </div>
+    </footer>
+
+
     <div id="root"></div>
     <script src="main.js" type="module"></script>
   </body>
