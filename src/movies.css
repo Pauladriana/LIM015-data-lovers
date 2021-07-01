@@ -18,7 +18,6 @@ h1{
 }
 
 .containerPosterFilms{
-    height: 558px;
     margin: 5px;
     border: 2px solid black;
     background-color: #394439;
@@ -29,10 +28,6 @@ h1{
 }
 
 .posterFilms{
-    /*background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;*/
     padding: 0;
     display: flex;
     justify-content: center;
@@ -42,7 +37,7 @@ h1{
 }
 
 .imgFilms{
-    align-items: flex-start;
+    width: 15rem;
 }
 
 .descriptionFilms{
