@@ -191,7 +191,9 @@ footer p{
     padding-bottom: 2rem;
 }
 
-.movie-title{
+.selected-film{
+    flex: 100%;
+    margin: auto;
     padding-top: 25rem;
     color: white;
 }
@@ -203,41 +205,29 @@ footer p{
     background-color: #394439;
     border-color: #d8d8d8;
     border-radius: 4px;
-    display: flex;
     padding: 20px
 }
 
-.posterFilms{
+.selectedposter{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
     padding: 0;
-    display: flex;
     justify-content: center;
     align-items: center;
     color: black;
     font-size: 18px;  
 }
 
-.imgFilms{
+#imgFilms{
     align-items: flex-start;
 }
 
-.descriptionFilms{
+#filmdescription{
     padding-left: 3%;
 }
 
-
-.movie-container{
-    display: block;
-    width: 80%;
-    margin:0 auto;
-    padding-bottom: 2rem;
-}
-
-
-
-.totoroPng{
-    height: 100%;
+.containerPeople img{
+    width: 150px;
 }
