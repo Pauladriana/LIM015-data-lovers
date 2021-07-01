@@ -29,10 +29,10 @@ footer{
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
-    background-color: #B6D96C;
+    background-color: #333;
     text-align: center;
     height: 100px;
-    color: #3D534B;
+    color: whitesmoke;
 }
 
 footer img{
@@ -179,4 +179,65 @@ footer p{
     width: 167px;
     height: 238px;
     border-radius: 5px 5px 0 0;
+}
+
+
+/*CONTENEDORES DE PELICULAS*/
+
+.movie-container{
+    display: block;
+    width: 80%;
+    margin:0 auto;
+    padding-bottom: 2rem;
+}
+
+.movie-title{
+    padding-top: 25rem;
+    color: white;
+}
+
+.containerPosterFilms{
+    height: 558px;
+    margin: 5px;
+    border: 2px solid black;
+    background-color: #394439;
+    border-color: #d8d8d8;
+    border-radius: 4px;
+    display: flex;
+    padding: 20px
+}
+
+.posterFilms{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 18px;  
+}
+
+.imgFilms{
+    align-items: flex-start;
+}
+
+.descriptionFilms{
+    padding-left: 3%;
+}
+
+
+.movie-container{
+    display: block;
+    width: 80%;
+    margin:0 auto;
+    padding-bottom: 2rem;
+}
+
+
+
+.totoroPng{
+    height: 100%;
 }
