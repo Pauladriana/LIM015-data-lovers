@@ -4,10 +4,15 @@ import data from './data/ghibli/ghibli.js';
 // import data from './data/rickandmorty/rickandmorty.js';
 
 //linkea titulo de mi html a mi js';
-let titulo = document.getElementById("title");  
-
+let titulo = document.getElementById("title"); 
+let imgPortada =document.getElementById("imgFilms");
+let descriptionPortada = document.getElementById( "descriptionFilms");
 //linkea todo el html  y lo trae al Js';
 titulo.innerHTML = data.films[0].title;
+imgPortada.setAttribute("src", data.films[0].poster);
+descriptionPortada.innerHTML = data.films[0].description;
+
+
 console.log(example, data.films);
 console.log(example, data.films[0].title);
 
