@@ -7,9 +7,6 @@ const filmDescription = data.films.map((film) => film.description);
 const people = data.films.map((film) => film.people);
 console.log(people)
 
-
-
-
 //BUCLEANDO PARA CREAR ELEMENTOS
 for (let i = 0; i < filmTitles.length; i++) {
     //Creamos el contenedor
@@ -36,6 +33,8 @@ for (let i = 0; i < filmTitles.length; i++) {
         document.getElementById("filmdescription").innerHTML = filmDescription[i];
         document.getElementById("imgFilms").setAttribute("src", filmPosters[i]);
         document.getElementById("selectedfilm").innerHTML = filmTitles[i];
+        const newPeopleContainer = document.getElementsByClassName("peoplecontainer")[0];
+        newPeopleContainer.innerHTML = "";
 
         //personajes
         for (let j = 0; j < people.length; j++) {
@@ -58,7 +57,6 @@ for (let i = 0; i < filmTitles.length; i++) {
         newPeopleCard.appendChild(newPeoplePhoto);
         newPeopleCard.appendChild(newPeopleName);
         //Ubicamos el contenedor en el DOM
-        const newPeopleContainer = document.getElementsByClassName("peoplecontainer")[0];
         newPeopleContainer.appendChild(newPeopleCard);
         }
     })
