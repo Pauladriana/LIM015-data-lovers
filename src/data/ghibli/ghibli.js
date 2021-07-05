@@ -157,7 +157,7 @@ export default {
         {
           "id": "26361a2c-32c6-4bd5-ae9c-8e40e17ae28d",
           "name": "Pazu's Mines",
-          "img": "",
+          "img": "https://catsandchocolate.files.wordpress.com/2016/09/laputa7.png?w=740",
           "climate": "Dry",
           "terrain": "Hill",
           "surface_water": "0",

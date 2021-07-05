@@ -5,6 +5,7 @@ body{
     font-size: 1.2rem;
     line-height: 1.6em;
     margin: 0;
+    max-width: 1440px;
 }
 
 h1{
@@ -13,18 +14,26 @@ h1{
 }
 
 .title{
-    padding-top: 16rem;
+    padding-top: 4rem;
     color: white;
+    text-align: center;
+}
+
+.totoroPng{
+    width: 56%;
+    display: block;
+    margin: auto;
 }
 
 .containerPosterFilms{
-    margin: 5px;
+    margin: auto;
     border: 2px solid black;
     background-color: #394439;
     border-color: #d8d8d8;
     border-radius: 4px;
     display: flex;
-    padding: 20px
+    padding: 20px;
+    width: 750px;
 }
 
 .posterFilms{
@@ -63,7 +72,6 @@ p{
     padding: 2rem 0;
     justify-content: center; 
     height: 15%;
-
     position: fixed;
     left: 0;
     top: 0;
@@ -81,12 +89,10 @@ p{
     align-items: center;
 }
 
-.totoroPng{
-    height: 100%;
-}
-
 .main{
     background: #3D534B;
+    padding-bottom: 2rem;
+    width: 100%;
 
 }
 
@@ -94,32 +100,42 @@ p{
     background: #333;
     padding: 1rem 0;
     text-align: center;
-    margin-top: -2rem;
+
 }
 
-.containerPeople{
-    height: 322px;
-    width: 162px;
-    margin: 5px;
-    border: 2px solid black;
-    background-color: #394439;
-    border-color: #d8d8d8;
-    border-radius: 4px;
+
+#vehicles,
+#location{
+    display: none;
+}
+
+.containerAllLocation,
+.containerAllVehicles,
+#contenedorPadrePeople {
     display: flex;
-    padding: 20px;
-    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%
 }
 
-.cntImageCharacter{
-    height: 92px;
-    width: 92px;
-    border-radius: 50px;
-    border: 1px solid white;
-    overflow: hidden;
+.containerLocation,
+.containerVehicles,
+.containerPeople{
+    width: 250px;
+    height: 300px;
+    background-color: black;
+    margin: 40px;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    background-color: #394439;
+    border: 1px solid #d8d8d8;
 }
 
-.characterImg{
-    height: 100%;
-    margin-left: -29%;
+.containerLocation img,
+.containerVehicles img,
+.containerPeople img {
+    width: 150px;
+    height: 100px;
+    margin: 30px;
+    border-radius: 5px;
 }
-
