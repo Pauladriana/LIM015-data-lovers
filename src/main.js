@@ -5,7 +5,7 @@ import data from './data/ghibli/ghibli.js';
 //Importamos la data de Ghibli
 const filmTitles = data.films.map((film) => film.title);
 const filmPosters = data.films.map((film) => film.poster);
-const filmDescription = data.films.map((film) => film.description);
+//const filmDescription = data.films.map((film) => film.description);
 const people = data.films.map((film) => film.people);
 console.log(people)
 
@@ -30,7 +30,7 @@ for (let i = 0; i < filmTitles.length; i++) {
     const newMovieContainer = document.getElementsByClassName("cardscontainer")[0];
     newMovieContainer.appendChild(newMovieCard);
 
-    //PAGINA DE FILM
+/*PAGINA DE FILM
     document.getElementsByClassName("filmClick")[i].addEventListener("click", function() {
         document.getElementById("filmdescription").innerHTML = filmDescription[i];
         document.getElementById("imgFilms").setAttribute("src", filmPosters[i]);
@@ -40,10 +40,10 @@ for (let i = 0; i < filmTitles.length; i++) {
 
         //personajes
         for (let j = 0; j < people.length; j++) {
-          const peopleName = people[i][j].name;
-          console.log(peopleName);
-          const peoplePhoto = people[i][j].img;
-          console.log(peoplePhoto);
+            const peopleName = people[i][j].name;
+            console.log(peopleName);
+            const peoplePhoto = people[i][j].img;
+            console.log(peoplePhoto);
         //Creamos el contenedor
         const newPeopleCard = document.createElement("div");
         newPeopleCard.setAttribute("class", "peoplecard");
@@ -61,7 +61,7 @@ for (let i = 0; i < filmTitles.length; i++) {
         //Ubicamos el contenedor en el DOM
         newPeopleContainer.appendChild(newPeopleCard);
         }
-    })
+    })*/
 }
 
 //BOTONES DE FILTRO
