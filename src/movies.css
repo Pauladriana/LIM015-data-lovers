@@ -14,28 +14,31 @@ h1{
 }
 
 .title{
-    padding-top: 4rem;
     color: white;
     text-align: center;
 }
 
 .totoroPng{
-    width: 56%;
+    width: 200px;
     display: block;
     margin: auto;
 }
 
 .containerPosterFilms{
+    display: flex;
+    flex-wrap: wrap;
     margin: auto;
     border: 2px solid black;
     background-color: #394439;
     border-color: #d8d8d8;
     border-radius: 4px;
-    display: flex;
     padding: 20px;
-    width: 750px;
+    max-width: 750px;
 }
-
+.containerPosterFilms p,
+.containerPosterFilms img{
+    flex: 50%
+}
 .posterFilms{
     padding: 0;
     display: flex;
@@ -66,16 +69,8 @@ p{
 }
 
 .header{
-    display: flex;
-    background: #333;
-    color:white;
-    padding: 2rem 0;
-    justify-content: center; 
-    height: 15%;
-    position: fixed;
-    left: 0;
-    top: 0;
-    right: 0;
+    background-color: #333;
+    flex: 100%
 }
 
 .header a {
@@ -93,6 +88,8 @@ p{
     background: #3D534B;
     padding-bottom: 2rem;
     width: 100%;
+    margin-top: 0;
+    padding-top: 3rem;
 
 }
 
@@ -114,7 +111,8 @@ p{
 #contenedorPadrePeople {
     display: flex;
     flex-wrap: wrap;
-    width: 100%
+    width: 100%;
+    justify-content: center;
 }
 
 .containerLocation,
@@ -138,4 +136,16 @@ p{
     height: 100px;
     margin: 30px;
     border-radius: 5px;
+}
+
+/*MEDIA QUERIES*/
+@media screen and (max-width: 840px) {
+    .containerPosterFilms p,
+    .containerPosterFilms img{
+    flex: 100%;
+    }
+    .containerPosterFilms {
+        justify-content: center;
+        margin: 3%;
+    }
 }
