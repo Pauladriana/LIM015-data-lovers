@@ -1,5 +1,8 @@
 import data from './data/ghibli/ghibli.js';
 
+let dataContenedora = JSON.parse(localStorage.getItem("identificador"));
+    console.log (dataContenedora);
+
 //linkea titulo de mi html a mi js';
 let titulo = document.getElementById("title");
 let imgPortada = document.getElementById("imgFilms");
@@ -8,12 +11,12 @@ let descriptionPortada = document.getElementById( "descriptionFilms");
 
 
 //linkea todo el html  y lo trae al Js';
-titulo.innerHTML = data.films[0].title;
-imgPortada.setAttribute("src", data.films[0].poster);
-descriptionPortada.innerHTML = data.films[0].description;
+titulo.innerHTML = dataContenedora.title;
+imgPortada.setAttribute("src", dataContenedora.poster);
+descriptionPortada.innerHTML = dataContenedora.description;
 
 //imprimiendo people personajes
-data.films[0].people.map(ele => {
+dataContenedora.people.map(ele => {
     // CREACION de ETIQUETAS DE HTML
     let newCharacterCardMovie = document.createElement("div");
     newCharacterCardMovie.setAttribute("class","containerPeople");
@@ -38,7 +41,7 @@ data.films[0].people.map(ele => {
 })
 
 //LOCACIONES
-data.films[0].locations.map(ele => {
+dataContenedora.locations.map(ele => {
     // CREACION de ETIQUETAS DE HTML
     let newLocationCardMovie = document.createElement("div");
     newLocationCardMovie.setAttribute("class","containerLocation");
@@ -66,7 +69,7 @@ data.films[0].locations.map(ele => {
 })
 
 //VEHICULOS
-data.films[0].vehicles.map(ele => {
+dataContenedora.vehicles.map(ele => {
     // CREACION de ETIQUETAS DE HTML
     let newVehicleCardMovie = document.createElement("div");
     newVehicleCardMovie.setAttribute("class","containerVehicles");
