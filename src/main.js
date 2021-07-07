@@ -30,6 +30,13 @@ for (let i = 0; i < filmTitles.length; i++) {
     const newMovieContainer = document.getElementsByClassName("cardscontainer")[0];
     newMovieContainer.appendChild(newMovieCard);
 
+    document.getElementsByClassName("moviecard")[i].addEventListener("click", function() {
+    
+        //USO LOCALSTORAGE
+    localStorage.setItem("identificador",JSON.stringify(data.films[i]));
+    console.log("identificador");
+    });
+
 /*PAGINA DE FILM
     document.getElementsByClassName("filmClick")[i].addEventListener("click", function() {
         document.getElementById("filmdescription").innerHTML = filmDescription[i];
