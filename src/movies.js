@@ -1,7 +1,6 @@
-import data from './data/ghibli/ghibli.js';
 
 let dataContenedora = JSON.parse(localStorage.getItem("identificador"));
-    console.log (dataContenedora);
+    //console.log (dataContenedora);
 
 //linkea titulo de mi html a mi js';
 let titulo = document.getElementById("title");

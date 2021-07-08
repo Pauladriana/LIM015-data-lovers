@@ -1,10 +1,15 @@
 
 body{
-    font-family: georgia,times,serif;
-    color: #333;
-    font-size: 1.2rem;
-    line-height: 1.6em;
-    margin: 0;
+    padding:0;
+    margin:0;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+}
+
+body {
+    cursor:  url('data:image/x-icon;base64,AAACAAEAICAQAAAAAADoAgAAFgAAACgAAAAgAAAAQAAAAAEABAAAAAAAAAIAAAAAAAAAAAAAEAAAAAAAAAAAAAAAxPj/AA2UGAD///8Aj4d+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABEREREREREREAAAAAAAAAARAABEREREURAAAAAAAAABEQDMAEREREURAAAAAAAAARAMzMwEREREUQAAAAAAAAEQDMzMBERERFEAAAAAAAARAADMwERERERFAQAAAAAAEREQAMBERERERQEAAAAAABERERAFBQUFBQUBAAAAAAAREREQAERQRFBFAQAAAMwAAAAREAREREREUQEAAADMzADMAAABBQUFBFARAAAAzMzMzMwEBFBEUEUREQAAAMzMzMzMBEREREURERAAAADMzMzMzMAREREREREQAAAAzMzMzMzMwAERERERAAAAAMzMzMzMzMzBEQzNEAAAAADMzMzMzMzMEREMDRAAAAAAzMzMzMzMwRERDM0QAAAAAMzMzMzMzBEQARERAAAAAADMzMzMzMABAIgREQAAAAAAzMzMzMwAiAiAgRAAAAAAAMzMzMzBAAiIiIEAAAAAAADMzMzMAQAAiIABAAAAAAAAzMzMwBEQAAgAERAAAAAAAMzMzAAREAAIABEQAAAAAADMzMAAERAAAAAREAAAAAAAzMwAABEQAAAAERAAAAAAAMzAAAABAAAAAAEAAAAAAADMAAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AAB//gAAP/4AAD/8AAAf/AAAH/wAAA/4AAAH+AAAB/gAAAcYAAAHAAAABwAAAAcAAAAHAAAADwAAAA8AAAAfAAAAPwAAAD8AAAA/AAAAfwAAAH8AAAD/AAAA/wAEAf8AAiD/AIIg/wGDYP8Dg+D/B8fx/w/v+/8f////P////w=='), auto;
 }
 
 h1{
@@ -15,6 +20,8 @@ h1{
 .title{
     color: white;
     text-align: center;
+    margin: auto;
+    padding: 3%
 }
 
 .totoroPng{
@@ -53,6 +60,9 @@ h1{
 
 .descriptionFilms{
     padding-left: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 p{
@@ -67,15 +77,34 @@ p{
     padding-bottom: 2rem;
 }
 
-.header{
+header{
     background-color: #333;
     flex: 100%
 }
-
-.header a {
-    color: white;
-    text-decoration: none;
+.social-media{
+    width: 20px;
+    display: flex;
+    flex: wrap;
 }
+
+#up-media{
+    position: absolute;
+    top: 3%;
+    right: 5%;
+}
+
+#up-media img{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+#ghibli-logo{
+    width: 200px;
+    display: block;
+    margin: auto;
+}
+
 
 .containerLogo{
     display: flex;
@@ -92,11 +121,30 @@ p{
 
 }
 
-.footer{
-    background: #333;
-    padding: 1rem 0;
+footer{
+    display: flex;
+    flex: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    background-color: #333;
     text-align: center;
+    height: 100px;
+    color: whitesmoke;
+}
 
+footer img{
+    width: 20px;
+    height: 20px;
+}
+
+footer div{
+    flex: 100%;
+}
+
+footer p{
+    height: auto;
+    flex: 100%;
 }
 
 
@@ -138,6 +186,22 @@ p{
 }
 
 /*MEDIA QUERIES*/
+
+@media screen and (max-width: 839px) {
+
+    #up-media{
+        right: 15%;
+    }
+    main{
+        display: block;
+    }
+
+    .title {
+        font-size: 42px;
+    }
+
+}
+
 @media screen and (max-width: 840px) {
     .containerPosterFilms p,
     .containerPosterFilms img{
