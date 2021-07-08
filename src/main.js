@@ -98,7 +98,7 @@ function filterMovies (filterName) {
         document.getElementsByClassName("moviecard")[i].addEventListener("click", function() {
             window.open("movies.html");
         //USO LOCALSTORAGE
-        localStorage.setItem("identificador",JSON.stringify(data.films[i]));
+        localStorage.setItem("identificador",JSON.stringify(filterName[i]));
         });
         }
     }
