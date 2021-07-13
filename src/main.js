@@ -9,6 +9,7 @@ const filmPosters = films.map((film) => film.poster);
 
 //BUCLEANDO PARA CREAR
 function allMovies () {
+    films = data.films;
 for (let i = 0; i < filmTitles.length; i++) {
     //Creamos el contenedor
     const newMovieCard = document.createElement("div");
@@ -274,46 +275,25 @@ ghibliLogo.addEventListener("click", function(){
 //BUSCAR PELICULA
 document.querySelector("#search-icon").addEventListener("click",function(){
     let searchedMovie = document.querySelector("#search-input").value;
+    let wordToSearch = searchedMovie.toLowerCase();
     if (searchedMovie !== "") {
-    const foundMovie = data.films.find(film => film.title === searchedMovie);
-    document.getElementsByClassName("cardscontainer")[0].innerHTML = "";
-    if (foundMovie !== undefined) {
-    //Creamos el contenedor
-    const newMovieCard = document.createElement("div");
-    newMovieCard.setAttribute("class", "moviecard");
-    //Creamos el elemento de imagen
-    const newMoviePoster = document.createElement("img");
-    newMoviePoster.setAttribute("src", foundMovie.poster);
-    newMoviePoster.setAttribute("class", "movie-poster");
-    //Creamos el elemento de titulo
-    const newMovieTitle = document.createElement("p");
-    const titleText = document.createTextNode(foundMovie.title);
-    newMovieTitle.setAttribute("class", "filmClick");
-    //Unimos los elementos al contenedor
-    newMovieTitle.appendChild(titleText);
-    newMovieCard.appendChild(newMoviePoster);
-    newMovieCard.appendChild(newMovieTitle);
-    //Ubicamos el contenedor en el DOM
-    const newMovieContainer = document.getElementsByClassName("cardscontainer")[0];
-    newMovieContainer.appendChild(newMovieCard);
-    document.getElementsByClassName("moviecard")[0].addEventListener("click", function() {
-        window.open("movies.html", "_self");
-    //USO LOCALSTORAGE
-    localStorage.setItem("identificador",JSON.stringify(foundMovie));
-    });
-    } else {
-        const messageContainer = document.createElement("div");
-        messageContainer.setAttribute("class", "message");
-        const messageText = document.createElement("p");
-        const messageP = document.createTextNode("We are sorry, We couldn't find the movie you are looking for. Try another name or browse the main page.");
-        messageContainer.appendChild(messageText);
-        messageText.appendChild(messageP);
-        const newMovieContainer = document.getElementsByClassName("cardscontainer")[0];
-        newMovieContainer.appendChild(messageContainer);
-        document.querySelector("#search-input").value = ""
+        films = films.filter(film => film.title.toLowerCase().includes(wordToSearch));
+        document.getElementsByClassName("cardscontainer")[0].innerHTML = "";
+        if (films !== undefined && films.length != 0) {
+            filterMovies(films);
+        } else {
+            const messageContainer = document.createElement("div");
+            messageContainer.setAttribute("class", "message");
+            const messageText = document.createElement("p");
+            const messageP = document.createTextNode("We are sorry, We couldn't find the movie you are looking for. Try another name or browse the main page.");
+            messageContainer.appendChild(messageText);
+            messageText.appendChild(messageP);
+            const newMovieContainer = document.getElementsByClassName("cardscontainer")[0];
+            newMovieContainer.appendChild(messageContainer);
+            document.querySelector("#search-input").value = ""
+        }
     }
-}
-})
+});
 
 
 // ***************  SORTING *****************
