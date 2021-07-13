@@ -1,10 +1,11 @@
 import data from './data/ghibli/ghibli.js';
 // import data from './data/rickandmorty/rickandmorty.js';
 
+let films = data.films;
 
 //Importamos la data de Ghibli
-const filmTitles = data.films.map((film) => film.title);
-const filmPosters = data.films.map((film) => film.poster);
+const filmTitles = films.map((film) => film.title);
+const filmPosters = films.map((film) => film.poster);
 
 //BUCLEANDO PARA CREAR
 function allMovies () {
@@ -31,7 +32,7 @@ for (let i = 0; i < filmTitles.length; i++) {
     document.getElementsByClassName("moviecard")[i].addEventListener("click", function() {
         window.open("movies.html");
     //USO LOCALSTORAGE
-    localStorage.setItem("identificador",JSON.stringify(data.films[i]));
+    localStorage.setItem("identificador",JSON.stringify(films[i]));
     });
 }
 }
@@ -111,10 +112,10 @@ directorHayao.addEventListener("click", function() {
     directorGoro.style.color = "black";
     directorHiromasa.style.color = "black";
     document.getElementsByClassName("filteritem")[0].style.display = "none";
-    const filmDirector = data.films.filter((film) => film.director === "Hayao Miyazaki");
+    films = data.films.filter((film) => film.director === "Hayao Miyazaki");
     //console.log(filmDirector);
     document.getElementsByClassName("cardscontainer")[0].innerHTML = "";
-    filterMovies(filmDirector);
+    filterMovies(films);
 });
 directorIsao.addEventListener("click", function() {
     directorHayao.style.color = "black";
@@ -124,10 +125,10 @@ directorIsao.addEventListener("click", function() {
     directorGoro.style.color = "black";
     directorHiromasa.style.color = "black";directorIsao.style.color = "blue";
     document.getElementsByClassName("filteritem")[0].style.display = "none";
-    const filmDirector = data.films.filter((film) => film.director === "Isao Takahata");
+    films = data.films.filter((film) => film.director === "Isao Takahata");
     //console.log(filmDirector);
     document.getElementsByClassName("cardscontainer")[0].innerHTML = "";
-    filterMovies(filmDirector);
+    filterMovies(films);
 });
 directorYoshifumi.addEventListener("click", function() {
     directorHayao.style.color = "black";
@@ -137,10 +138,10 @@ directorYoshifumi.addEventListener("click", function() {
     directorGoro.style.color = "black";
     directorHiromasa.style.color = "black";
     document.getElementsByClassName("filteritem")[0].style.display = "none";
-    const filmDirector = data.films.filter((film) => film.director === "Yoshifumi Kondō");
+    films = data.films.filter((film) => film.director === "Yoshifumi Kondō");
     //console.log(filmDirector);
     document.getElementsByClassName("cardscontainer")[0].innerHTML = "";
-    filterMovies(filmDirector);
+    filterMovies(films);
 });
 directorHiroyuki.addEventListener("click", function() {
     directorHayao.style.color = "black";
@@ -150,10 +151,10 @@ directorHiroyuki.addEventListener("click", function() {
     directorGoro.style.color = "black";
     directorHiromasa.style.color = "black";
     document.getElementsByClassName("filteritem")[0].style.display = "none";
-    const filmDirector = data.films.filter((film) => film.director === "Hiroyuki Morita");
+    films = data.films.filter((film) => film.director === "Hiroyuki Morita");
     //console.log(filmDirector);
     document.getElementsByClassName("cardscontainer")[0].innerHTML = "";
-    filterMovies(filmDirector);
+    filterMovies(films);
 });
 directorGoro.addEventListener("click", function() {
     directorHayao.style.color = "black";
@@ -163,10 +164,10 @@ directorGoro.addEventListener("click", function() {
     directorGoro.style.color = "blue";
     directorHiromasa.style.color = "black";
     document.getElementsByClassName("filteritem")[0].style.display = "none";
-    const filmDirector = data.films.filter((film) => film.director === "Gorō Miyazaki");
+    films = data.films.filter((film) => film.director === "Gorō Miyazaki");
     //console.log(filmDirector);
     document.getElementsByClassName("cardscontainer")[0].innerHTML = "";
-    filterMovies(filmDirector);
+    filterMovies(films);
 });
 directorHiromasa.addEventListener("click", function() {
     directorHayao.style.color = "black";
@@ -176,10 +177,10 @@ directorHiromasa.addEventListener("click", function() {
     directorGoro.style.color = "black";
     directorHiromasa.style.color = "blue";
     document.getElementsByClassName("filteritem")[0].style.display = "none";
-    const filmDirector = data.films.filter((film) => film.director === "Hiromasa Yonebayashi");
+    films = data.films.filter((film) => film.director === "Hiromasa Yonebayashi");
     //console.log(filmDirector);
     document.getElementsByClassName("cardscontainer")[0].innerHTML = "";
-    filterMovies(filmDirector);
+    filterMovies(films);
 });
 
 // FILTRADO DE PRODUCTORES
@@ -196,10 +197,10 @@ producerTakahata.addEventListener("click", function() {
     producerSuzuki.style.color = "black";
     producerNishimura.style.color = "black";
     document.getElementsByClassName("filteritem")[1].style.display = "none";
-    const filmProducer = data.films.filter((film) => film.producer === "Isao Takahata");
+    films = data.films.filter((film) => film.producer === "Isao Takahata");
     //console.log(filmProducer);
     document.getElementsByClassName("cardscontainer")[0].innerHTML = "";
-    filterMovies(filmProducer);
+    filterMovies(films);
 });
 producerMiyazaki.addEventListener("click", function() {
     producerTakahata.style.color = "black";
@@ -208,10 +209,10 @@ producerMiyazaki.addEventListener("click", function() {
     producerSuzuki.style.color = "black";
     producerNishimura.style.color = "black";
     document.getElementsByClassName("filteritem")[1].style.display = "none";
-    const filmProducer = data.films.filter((film) => film.producer === "Hayao Miyazaki");
+    films = data.films.filter((film) => film.producer === "Hayao Miyazaki");
     //console.log(filmProducer);
     document.getElementsByClassName("cardscontainer")[0].innerHTML = "";
-    filterMovies(filmProducer);
+    filterMovies(films);
 });
 producerHara.addEventListener("click", function() {
     producerTakahata.style.color = "black";
@@ -220,10 +221,10 @@ producerHara.addEventListener("click", function() {
     producerSuzuki.style.color = "black";
     producerNishimura.style.color = "black";
     document.getElementsByClassName("filteritem")[1].style.display = "none";
-    const filmProducer = data.films.filter((film) => film.producer === "Toru Hara");
+    films = data.films.filter((film) => film.producer === "Toru Hara");
     //console.log(filmProducer);
     document.getElementsByClassName("cardscontainer")[0].innerHTML = "";
-    filterMovies(filmProducer);
+    filterMovies(films);
 });
 producerSuzuki.addEventListener("click", function() {
     producerTakahata.style.color = "black";
@@ -232,10 +233,10 @@ producerSuzuki.addEventListener("click", function() {
     producerSuzuki.style.color = "blue";
     producerNishimura.style.color = "black";
     document.getElementsByClassName("filteritem")[1].style.display = "none";
-    const filmProducer = data.films.filter((film) => film.producer === "Toshio Suzuki");
+    films = data.films.filter((film) => film.producer === "Toshio Suzuki");
     //console.log(filmProducer);
     document.getElementsByClassName("cardscontainer")[0].innerHTML = "";
-    filterMovies(filmProducer);
+    filterMovies(films);
 });
 producerNishimura.addEventListener("click", function() {
     producerTakahata.style.color = "black";
@@ -244,10 +245,10 @@ producerNishimura.addEventListener("click", function() {
     producerSuzuki.style.color = "black";
     producerNishimura.style.color = "blue";
     document.getElementsByClassName("filteritem")[1].style.display = "none";
-    const filmProducer = data.films.filter((film) => film.producer === "Yoshiaki Nishimura");
+    films = data.films.filter((film) => film.producer === "Yoshiaki Nishimura");
     //console.log(filmProducer);
     document.getElementsByClassName("cardscontainer")[0].innerHTML = "";
-    filterMovies(filmProducer);
+    filterMovies(films);
 });
 
 //HACER CLICK EN CABECERA PARA QUE ME MUESTRE TODAS LAS PELICULAS
@@ -268,3 +269,65 @@ ghibliLogo.addEventListener("click", function(){
     allMovies();
 
 })
+
+
+// ***************  SORTING *****************
+function compareStrings(a, b) {
+    a = a.toLowerCase();
+    b = b.toLowerCase();
+
+    return (a < b) ? -1 : (a > b) ? 1 : 0;
+}
+
+function compareRade(a, b) {
+    return (a < b) ? -1 : (a > b) ? 1 : 0;
+}
+
+// SORT A-Z 
+let alfabeticAtoZ = document.getElementById("byAlphaAtoZ");
+alfabeticAtoZ.addEventListener("click", ordenAlfaAtoZ);
+function ordenAlfaAtoZ() {
+    document.getElementsByClassName("cardscontainer")[0].innerHTML = "";
+    films.sort(function(a, b) {
+        return compareStrings(a.title, b.title);
+    })
+    filterMovies(films);
+}
+
+// SORT Z-A
+let alfabeticZtoA = document.getElementById("byAlphaZtoA");
+alfabeticZtoA.addEventListener("click", ordenAlfaZtoA);
+function ordenAlfaZtoA() {
+    document.getElementsByClassName("cardscontainer")[0].innerHTML = "";
+    films.sort(function(a, b) {
+        return compareStrings(b.title, a.title);
+    })
+    filterMovies(films);
+}
+
+//SORT TO YEAR RELEASE_DATA 
+
+let yearOFMovie = document.getElementById("byYear");
+yearOFMovie.addEventListener("click", yearMovie);
+function yearMovie() {
+    document.getElementsByClassName("cardscontainer")[0].innerHTML = "";
+    films.sort(function(a, b) {
+        return compareStrings(a.release_date, b.release_date);
+    })
+    filterMovies(films);
+}
+
+//SORT TO YEAR rt_score 
+
+let scoreOFMovie = document.getElementById("byRate");
+scoreOFMovie.addEventListener("click", scoreMovie);
+function scoreMovie() {
+    document.getElementsByClassName("cardscontainer")[0].innerHTML = "";
+    films.sort(function(a, b) {
+        return compareRade(Number(b.rt_score), Number(a.rt_score));
+    })
+    filterMovies(films);
+}
+    
+
+

@@ -80,12 +80,12 @@ footer p{
     margin: auto;
 }
 
-#sortby{
+.sortby{
     border: none;
     border-radius: 5px;
     background-color: #B6D96C;
     width: 190px;
-    height: 20px;
+    height: 40px;
     padding: 5px;
     margin-top: 20px;
     margin-left: 50px;
@@ -291,3 +291,49 @@ footer p{
         margin-top: 0;
     }
 }
+/*sortBy*/
+ul , ol {
+    list-style: none;
+}
+.nav {
+    margin: 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #B6D96C;
+    width: 190px;
+    height: 40px;
+    padding: 5px;
+    margin-top: 20px;
+    margin-left: 50px;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-weight: 600;
+    color: #3D534B;
+}
+.nav li {
+    background-color: #B6D96C;
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    width: 162px;
+    height: 18px;
+}
+
+.nav li:hover {
+    background-color: rgb(100, 99, 96);
+}
+
+.nav > li {
+    float: left;
+}
+
+.nav li ul {
+    display: none;
+    position: absolute;
+    min-width: 140px;
+}
+
+.nav li:hover > ul {
+    display: block;
+}
+

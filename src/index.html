@@ -51,9 +51,18 @@
     </aside>
 
     <main>
-      <div id="sortby">
-        <span>SORT BY</span><img src="\src\multimedia\down-arrow.svg" alt="down-arrow" id="sort-icon">
-      </div>
+      <ul id="sortby" class="nav">
+        <li>SORT BY
+          <!--<img src="\src\multimedia\down-arrow.svg" alt="down-arrow">-->
+          <ul>
+            <li id="byAlphaAtoZ" class="byAlpha"> A-Z</li>
+            <li id="byAlphaZtoA" class="byAlpha"> Z-A</li>
+            <li id="byYear" class="byYear">Año</li>
+            <li id="byRate" class="byRate">Mas Populare</li>
+          </ul>
+        </li>
+      </ul>
+
       <div class="cardscontainer">
       </div>
     </main>
