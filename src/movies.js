@@ -96,3 +96,9 @@ dataContenedora.vehicles.map(ele => {
 
 })
 
+//HACER CLICK EN CABECERA PARA QUE ME MUESTRE TODAS LAS PELICULAS
+const ghibliLogo = document.querySelector("#ghibli-logo");
+ghibliLogo.addEventListener("click", function(){
+    window.open("index.html", "_self")
+})
+
