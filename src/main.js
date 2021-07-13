@@ -113,7 +113,7 @@ directorHayao.addEventListener("click", function() {
     directorHiromasa.style.color = "black";
     document.getElementsByClassName("filteritem")[0].style.display = "none";
     const filmDirector = data.films.filter((film) => film.director === "Hayao Miyazaki");
-    //console.log(filmDirector);
+    console.log(filmDirector);
     document.getElementsByClassName("cardscontainer")[0].innerHTML = "";
     filterMovies(filmDirector);
 });
