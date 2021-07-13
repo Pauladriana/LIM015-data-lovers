@@ -273,9 +273,10 @@ ghibliLogo.addEventListener("click", function(){
 
 //BUSCAR PELICULA
 document.querySelector("#search-icon").addEventListener("click",function(){
-    let searchedMovie = document.querySelector("#search-input").value;
+    let searchedMovie = document.querySelector("#search-input").value.toLowerCase();
     if (searchedMovie !== "") {
-    const foundMovie = data.films.find(film => film.title === searchedMovie);
+    const foundMovie = data.films.find(film => film.title.toLocaleLowerCase() === searchedMovie);
+    console.log()
     document.getElementsByClassName("cardscontainer")[0].innerHTML = "";
     if (foundMovie !== undefined) {
     //Creamos el contenedor
