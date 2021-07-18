@@ -266,7 +266,7 @@ document.querySelector("#search-icon").addEventListener("click",function(){
     const searchedMovie = document.querySelector("#search-input").value.toLowerCase();
     if (searchedMovie !== "") {
     films = data.films.filter(film => film.title.toLocaleLowerCase().includes(searchedMovie));
-    console.log(films)
+    //console.log(films)
     document.getElementsByClassName("cardscontainer")[0].innerHTML = "";
     if (films !== undefined && films.length != 0) {
         filterMovies(films);
