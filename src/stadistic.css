@@ -14,7 +14,7 @@ body {
 
 
 header{
-    background-color: #333;
+    background-color: #0c2d3da9;
     flex: 100%
 }
 .social-media{
@@ -63,9 +63,8 @@ footer{
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
-    background-color: #333;
+    background-color: #0a2431de;
     text-align: center;
-    height: 100px;
     color: whitesmoke;
 }
 
@@ -123,5 +122,3 @@ footer p{
     margin:8px;
     padding:0;
  }
-
- Hayo
