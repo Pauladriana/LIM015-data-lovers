@@ -1,5 +1,5 @@
 import data from './data/ghibli/ghibli.js';
-// import data from './data/rickandmorty/rickandmorty.js';
+import {filterByDirector, filterByProducer, ordenAlfaAtoZ, ordenAlfaZtoA, yearMovie, scoreMovie} from '../src/data.js';
 
 let films = data.films;
 
@@ -66,7 +66,7 @@ const directorHiroyuki = document.querySelector("#hiMo");
 const directorGoro = document.querySelector("#goMi");
 const directorHiromasa = document.querySelector("#hiYo");
 
-function filterMovies (filterName) {
+function movieCards (filterName) {
     for (let i = 0; i < filterName.length; i++) {
         //Creamos el contenedor
         const newMovieCard = document.createElement("div");
@@ -93,84 +93,67 @@ function filterMovies (filterName) {
         });
         }
     }
+function colorFilter (){
+    directorHayao.style.color = "whitesmoke";
+    directorIsao.style.color = "whitesmoke";
+    directorYoshifumi.style.color = "whitesmoke";
+    directorHiroyuki.style.color = "whitesmoke";
+    directorGoro.style.color = "whitesmoke";
+    directorHiromasa.style.color = "whitesmoke";
+    producerTakahata.style.color = "whitesmoke";
+    producerMiyazaki.style.color = "whitesmoke";
+    producerHara.style.color = "whitesmoke";
+    producerSuzuki.style.color = "whitesmoke";
+    producerNishimura.style.color = "whitesmoke";
+}
 
 directorHayao.addEventListener("click", function() {
+    colorFilter();
     directorHayao.style.color = "#ffd092";
-    directorIsao.style.color = "whitesmoke";
-    directorYoshifumi.style.color = "whitesmoke";
-    directorHiroyuki.style.color = "whitesmoke";
-    directorGoro.style.color = "whitesmoke";
-    directorHiromasa.style.color = "whitesmoke";
     document.getElementsByClassName("filteritem")[0].style.display = "none";
-    films = data.films.filter((film) => film.director === "Hayao Miyazaki");
-    //console.log(filmDirector);
+    films = filterByDirector(data.films, "Hayao Miyazaki");
     document.getElementsByClassName("cardscontainer")[0].innerHTML = "";
-    filterMovies(films);
+    movieCards(films);
 });
 directorIsao.addEventListener("click", function() {
-    directorHayao.style.color = "whitesmoke";
+    colorFilter();
     directorIsao.style.color = "#ffd092";
-    directorYoshifumi.style.color = "whitesmoke";
-    directorHiroyuki.style.color = "whitesmoke";
-    directorGoro.style.color = "whitesmoke";
-    directorHiromasa.style.color = "whitesmoke";
     document.getElementsByClassName("filteritem")[0].style.display = "none";
-    films = data.films.filter((film) => film.director === "Isao Takahata");
-    //console.log(filmDirector);
+    films = filterByDirector(data.films, "Isao Takahata");
     document.getElementsByClassName("cardscontainer")[0].innerHTML = "";
-    filterMovies(films);
+    movieCards(films);
 });
 directorYoshifumi.addEventListener("click", function() {
-    directorHayao.style.color = "whitesmoke";
-    directorIsao.style.color = "whitesmoke";
+    colorFilter();
     directorYoshifumi.style.color = "#ffd092";
-    directorHiroyuki.style.color = "whitesmoke";
-    directorGoro.style.color = "whitesmoke";
-    directorHiromasa.style.color = "whitesmoke";
     document.getElementsByClassName("filteritem")[0].style.display = "none";
-    films = data.films.filter((film) => film.director === "Yoshifumi Kondō");
-    //console.log(filmDirector);
+    films = filterByDirector(data.films, "Yoshifumi Kondō");
     document.getElementsByClassName("cardscontainer")[0].innerHTML = "";
-    filterMovies(films);
+    movieCards(films);
 });
 directorHiroyuki.addEventListener("click", function() {
-    directorHayao.style.color = "whitesmoke";
-    directorIsao.style.color = "whitesmoke";
-    directorYoshifumi.style.color = "whitesmoke";
+    colorFilter();
     directorHiroyuki.style.color = "#ffd092";
-    directorGoro.style.color = "whitesmoke";
-    directorHiromasa.style.color = "whitesmoke";
     document.getElementsByClassName("filteritem")[0].style.display = "none";
-    films = data.films.filter((film) => film.director === "Hiroyuki Morita");
-    //console.log(filmDirector);
+    films = filterByDirector(data.films, "Hiroyuki Morita");
     document.getElementsByClassName("cardscontainer")[0].innerHTML = "";
-    filterMovies(films);
+    movieCards(films);
 });
 directorGoro.addEventListener("click", function() {
-    directorHayao.style.color = "whitesmoke";
-    directorIsao.style.color = "whitesmoke";
-    directorYoshifumi.style.color = "whitesmoke";
-    directorHiroyuki.style.color = "whitesmoke";
+    colorFilter();
     directorGoro.style.color = "#ffd092";
-    directorHiromasa.style.color = "whitesmoke";
     document.getElementsByClassName("filteritem")[0].style.display = "none";
-    films = data.films.filter((film) => film.director === "Gorō Miyazaki");
-    //console.log(filmDirector);
+    films = filterByDirector(data.films, "Gorō Miyazaki");
     document.getElementsByClassName("cardscontainer")[0].innerHTML = "";
-    filterMovies(films);
+    movieCards(films);
 });
 directorHiromasa.addEventListener("click", function() {
-    directorHayao.style.color = "whitesmoke";
-    directorIsao.style.color = "whitesmoke";
-    directorYoshifumi.style.color = "whitesmoke";
-    directorHiroyuki.style.color = "whitesmoke";
-    directorGoro.style.color = "whitesmoke";
+    colorFilter();
     directorHiromasa.style.color = "#ffd092";
     document.getElementsByClassName("filteritem")[0].style.display = "none";
-    films = data.films.filter((film) => film.director === "Hiromasa Yonebayashi");
-    //console.log(filmDirector);
+    films = filterByDirector(data.films, "Hiromasa Yonebayashi");
     document.getElementsByClassName("cardscontainer")[0].innerHTML = "";
-    filterMovies(films);
+    movieCards(films);
 });
 
 // FILTRADO DE PRODUCTORES
@@ -181,64 +164,44 @@ const producerSuzuki = document.querySelector("#Suzuki");
 const producerNishimura = document.querySelector("#Nishimura");
 
 producerTakahata.addEventListener("click", function() {
+    colorFilter();
     producerTakahata.style.color = "#ffd092";
-    producerMiyazaki.style.color = "whitesmoke";
-    producerHara.style.color = "whitesmoke";
-    producerSuzuki.style.color = "whitesmoke";
-    producerNishimura.style.color = "whitesmoke";
     document.getElementsByClassName("filteritem")[1].style.display = "none";
-    films = data.films.filter((film) => film.producer === "Isao Takahata");
-    //console.log(filmProducer);
+    films = filterByProducer(data.films, "Isao Takahata");
     document.getElementsByClassName("cardscontainer")[0].innerHTML = "";
-    filterMovies(films);
+    movieCards(films);
 });
 producerMiyazaki.addEventListener("click", function() {
-    producerTakahata.style.color = "whitesmoke";
+    colorFilter();
     producerMiyazaki.style.color = "#ffd092";
-    producerHara.style.color = "whitesmoke";
-    producerSuzuki.style.color = "whitesmoke";
-    producerNishimura.style.color = "whitesmoke";
     document.getElementsByClassName("filteritem")[1].style.display = "none";
-    films = data.films.filter((film) => film.producer === "Hayao Miyazaki");
-    //console.log(filmProducer);
+    films = filterByProducer(data.films, "Hayao Miyazaki");
     document.getElementsByClassName("cardscontainer")[0].innerHTML = "";
-    filterMovies(films);
+    movieCards(films);
 });
 producerHara.addEventListener("click", function() {
-    producerTakahata.style.color = "whitesmoke";
-    producerMiyazaki.style.color = "whitesmoke";
+    colorFilter();
     producerHara.style.color = "#ffd092";
-    producerSuzuki.style.color = "whitesmoke";
-    producerNishimura.style.color = "whitesmoke";
     document.getElementsByClassName("filteritem")[1].style.display = "none";
-    films = data.films.filter((film) => film.producer === "Toru Hara");
-    //console.log(filmProducer);
+    films = filterByProducer(data.films, "Toru Hara");
     document.getElementsByClassName("cardscontainer")[0].innerHTML = "";
-    filterMovies(films);
+    movieCards(films);
 });
 producerSuzuki.addEventListener("click", function() {
-    producerTakahata.style.color = "whitesmoke";
-    producerMiyazaki.style.color = "whitesmoke";
-    producerHara.style.color = "whitesmoke";
+    colorFilter();
     producerSuzuki.style.color = "#ffd092";
-    producerNishimura.style.color = "whitesmoke";
     document.getElementsByClassName("filteritem")[1].style.display = "none";
-    films = data.films.filter((film) => film.producer === "Toshio Suzuki");
-    //console.log(filmProducer);
+    films = filterByProducer(data.films, "Toshio Suzuki");
     document.getElementsByClassName("cardscontainer")[0].innerHTML = "";
-    filterMovies(films);
+    movieCards(films);
 });
 producerNishimura.addEventListener("click", function() {
-    producerTakahata.style.color = "whitesmoke";
-    producerMiyazaki.style.color = "whitesmoke";
-    producerHara.style.color = "whitesmoke";
-    producerSuzuki.style.color = "whitesmoke";
+    colorFilter();
     producerNishimura.style.color = "#ffd092";
     document.getElementsByClassName("filteritem")[1].style.display = "none";
-    films = data.films.filter((film) => film.producer === "Yoshiaki Nishimura");
-    //console.log(filmProducer);
+    films = filterByProducer(data.films, "Yoshiaki Nishimura");
     document.getElementsByClassName("cardscontainer")[0].innerHTML = "";
-    filterMovies(films);
+    movieCards(films);
 });
 
 //HACER CLICK EN CABECERA PARA QUE ME MUESTRE TODAS LAS PELICULAS
@@ -269,7 +232,7 @@ document.querySelector("#search-icon").addEventListener("click",function(){
     //console.log(films)
     document.getElementsByClassName("cardscontainer")[0].innerHTML = "";
     if (films !== undefined && films.length != 0) {
-        filterMovies(films);
+        movieCards(films);
     } else {
         const messageContainer = document.createElement("div");
         messageContainer.setAttribute("class", "message");
@@ -285,63 +248,38 @@ document.querySelector("#search-icon").addEventListener("click",function(){
 })
 
 
-// ***************  SORTING *****************
-function compareStrings(a, b) {
-    a = a.toLowerCase();
-    b = b.toLowerCase();
-
-    return (a < b) ? -1 : (a > b) ? 1 : 0;
-}
-
-function compareRade(a, b) {
-    return (a < b) ? -1 : (a > b) ? 1 : 0;
-}
 
 // SORT A-Z
 let alfabeticAtoZ = document.getElementById("byAlphaAtoZ");
-alfabeticAtoZ.addEventListener("click", ordenAlfaAtoZ);
-function ordenAlfaAtoZ() {
+alfabeticAtoZ.addEventListener("click", function(){
     document.getElementsByClassName("cardscontainer")[0].innerHTML = "";
-    films.sort(function(a, b) {
-        return compareStrings(a.title, b.title);
-    })
-    filterMovies(films);
-}
+    ordenAlfaAtoZ(films);
+    movieCards(films);
+});
 
 // SORT Z-A
 let alfabeticZtoA = document.getElementById("byAlphaZtoA");
-alfabeticZtoA.addEventListener("click", ordenAlfaZtoA);
-function ordenAlfaZtoA() {
+alfabeticZtoA.addEventListener("click", function(){
     document.getElementsByClassName("cardscontainer")[0].innerHTML = "";
-    films.sort(function(a, b) {
-        return compareStrings(b.title, a.title);
-    })
-    filterMovies(films);
-}
+    ordenAlfaZtoA(films);
+    movieCards(films);
+});
 
 //SORT TO YEAR RELEASE_DATA
-
 let yearOFMovie = document.getElementById("byYear");
-yearOFMovie.addEventListener("click", yearMovie);
-function yearMovie() {
+yearOFMovie.addEventListener("click", function(){
     document.getElementsByClassName("cardscontainer")[0].innerHTML = "";
-    films.sort(function(a, b) {
-        return compareStrings(a.release_date, b.release_date);
-    })
-    filterMovies(films);
-}
+    yearMovie(films);
+    movieCards(films);
+});
 
 //SORT TO YEAR rt_score
-
 let scoreOFMovie = document.getElementById("byRate");
-scoreOFMovie.addEventListener("click", scoreMovie);
-function scoreMovie() {
+scoreOFMovie.addEventListener("click", function(){
     document.getElementsByClassName("cardscontainer")[0].innerHTML = "";
-    films.sort(function(a, b) {
-        return compareRade(Number(b.rt_score), Number(a.rt_score));
-    })
-    filterMovies(films);
-}
+    scoreMovie(films);
+    movieCards(films);
+});
 
 
 
