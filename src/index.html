@@ -5,18 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/3311e3ac16.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@300&family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
-      <img src="\src\multimedia\whiteghibli.svg" alt="ghibli-logo" id="ghibli-logo">
+      <a href="#moviesSection">Movies</a>
+      <a href="#aboutGhibli">About</a>
+      <img src="\src\multimedia\ghiblilogo2.svg" alt="" id="headerlogo">
+      <a>Statistics</a>
       <div class="social-media" id="up-media">
-      <img src="\src\multimedia\winstagram.svg" alt="instagram-link"><img src="\src\multimedia\wfacebook.svg" alt="facebook-link"><img src="\src\multimedia\wtwitter.svg" alt="twitter-link">
+        <a href="#">
+					<i class="fab fa-facebook"></i>
+				</a>
+				<a href="#">
+					<i class="fab fa-instagram"></i>
+				</a>
+				<a href="#">
+				<i class="fab fa-twitter"></i>
+				</a>
       </div>
     </header>
 
+    <section class="cover">
+      <div class="slider" id="slider">
+        <div class="headergif gif1"></div>
+        <div class="headergif gif2"></div>
+        <div class="headergif gif3"></div>
+        <div class="headergif gif4"></div>
+      </div>
+    </section>
+
+    <section class="ghiblimovies">
     <aside>
       <div id="searchbar">
         <input type="text" id="search-input">
@@ -63,21 +85,47 @@
         </li>
       </ul>
 
-      <div class="cardscontainer">
+      <div class="cardscontainer" id="moviesSection">
       </div>
     </main>
+  </section>
 
+    <section class="infoGhibli" id="aboutGhibli">
+      <div id="ghiblitext">
+        <h2>About</h2>
+        <p>Studio Ghibli Inc. (Japanese: 株式会社スタジオジブリ) is a Japanese animation film studio headquartered in Koganei, Tokyo. The studio is best known for its animated feature films, and has also produced several short films, television commercials, and one television film. The studio's mascot and most recognizable symbol is the character Totoro, a giant cat-like spirit from the studio's 1988 film My Neighbor Totoro. Studio Ghibli's highest grossing films include Spirited Away (2001), Ponyo (2008), and Howl's Moving Castle (2004). The studio was founded on June 15, 1985 by directors Hayao Miyazaki and Isao Takahata and producer Toshio Suzuki, after the success of Topcraft's anime film Nausicaä of the Valley of the Wind (1984). Studio Ghibli has also collaborated with video game studios on the visual development of several video games.</p>
+      </div>
+      <div id="ghibliphoto"></div>
+    </section>
+
+    <section class="hayaoMiyazaki">
+      <div>
+        <img src="/src/multimedia/hayaoM.jpg" alt="" id="hayaophoto">
+      </div>
+      <div id="hayaotext">
+        <h2>Hayao Miyazaki</h2>
+        <p>Hayao Miyazaki (宮崎 駿; born 5 January 1941) is a Japanese animator, director, producer, screenwriter, author, and manga artist. A co-founder of Studio Ghibli, a film and animation studio, he has attained international acclaim as a masterful storyteller and as a maker of animated feature films, and is widely regarded as one of the most accomplished filmmakers in the history of animation.</p>
+      </div>
+    </section>
 
     <footer>
       <p>For more information, please visit:</p>
       <br>
       <div>
-        <img src="\src\multimedia\ginstagram.svg" alt="instagram-link"><img src="\src\multimedia\gfacebook.svg" alt="facebook-link"><img src="\src\multimedia\gtwitter.svg" alt="twitter-link">
+        <a href="#">
+					<i class="fab fa-facebook"></i>
+				</a>
+				<a href="#">
+					<i class="fab fa-instagram"></i>
+				</a>
+				<a href="#">
+				<i class="fab fa-twitter"></i>
+				</a>
       </div>
     </footer>
 
-
     <div id="root"></div>
     <script src="main.js" type="module"></script>
+    <script src="index.js" type="module"></script>
   </body>
 </html>
