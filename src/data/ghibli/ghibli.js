@@ -84,7 +84,7 @@ export default {
         {
           "id": "fcb4a2ac-5e41-4d54-9bba-33068db083ca",
           "name": "Louis",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/8/80/Louis.jpg",
+          "img": "https://cdn.myanimelist.net/images/characters/15/327932.jpg",
           "gender": "Male",
           "age": "30",
           "eye_color": "Dark brown",
@@ -448,7 +448,7 @@ export default {
         {
           "id": "62346d33-caa0-4c17-8016-0aca56f3066b",
           "name": "Karikiya",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/5/51/Kiki%27s_House.jpg",
+          "img": "https://i.pinimg.com/originals/8f/38/b3/8f38b3bc01474029a5cfa9ef419c0b56.jpg",
           "climate": "Mild",
           "terrain": "City",
           "surface_water": "30",
@@ -564,7 +564,7 @@ export default {
         {
           "id": "3f78eba1-f9b0-489b-8686-f4508cdf049d",
           "name": "Toshio",
-          "img": "http://static.wikia.nocookie.net/studio-ghibli/images/2/23/Toshio.png",
+          "img": "//pm1.narvii.com/6843/d65a0cbc04a7190eb090f15ece66f856421bdc19v2_hq.jpg",
           "gender": "Male",
           "age": "Adult",
           "eye_color": "Black",
@@ -615,7 +615,7 @@ export default {
           "id": "c8f02850-0c1f-499c-8b5e-d8ad16f3ecc4",
           "name": "Yaeko Okajima",
           "gender": "Female",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/0/03/Yaeko.png",
+          "img": "https://i.pinimg.com/originals/da/da/1a/dada1ace97e5cb90bbccf63eec397e4a.png",
           "age": "16",
           "eye_color": "Black",
           "hair_color": "Grey",
@@ -624,7 +624,7 @@ export default {
         {
           "id": "6e960787-5a47-4178-a040-1ef5bf5e4a6c",
           "name": "Tani Tsuneko",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/5/5a/Tani.jpg",
+          "img": "https://ami.animecharactersdatabase.com/uploads/chars/5457-601871977.jpg",
           "gender": "Female",
           "age": "10",
           "eye_color": "Black",
@@ -666,7 +666,7 @@ export default {
         {
           "id": "dbeeaecb-7817-4b8b-90ca-edc432d3033e",
           "name": "Taeko's House",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/c/cf/Only_Yesterday_artwork_%2813%29.jpg", 
+          "img": "https://i.pinimg.com/originals/a4/cf/71/a4cf71f8932514df61929197a1e3717b.jpg", 
           "climate": "Continental",
           "terrain": "River",
           "surface_water": "40",
@@ -700,7 +700,7 @@ export default {
         {
           "id": "eff43a47-e59c-41bd-bcc6-b1827d63bed5",
           "name": "Donald Curtis",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/3/3c/Curtis.jpg",
+          "img": "https://external-preview.redd.it/cJCb8QL2PC05gC1T4IZZsRLHUKVtKuYvdKv2rYIEtiI.jpg?auto=webp&s=968e7485d30cffc1df7ca4bb734a272ca123d3ae",
           "gender": "Male",
           "age": "Adult",
           "eye_color": "Brown",
@@ -895,7 +895,7 @@ export default {
         {
           "id": "42a69bf6-b5e8-42b1-b05a-12c3d05e7c1e",
           "name": "Shizuku Tsukishima",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/d/db/Shizuku_Tsukishima.gif",
+          "img": "//pm1.narvii.com/7245/6d4ce9ebee4837248754a727b5bc9b859677c12ar1-512-479v2_hq.jpg",
           "gender": "Female",
           "age": "14",
           "eye_color": "Black",
@@ -905,7 +905,7 @@ export default {
         {
           "id": "fc196c4f-0201-4ed2-9add-c6403f7c4d32",
           "name": "Baron Humbert von Gikkingen",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/7/73/Baron.jpg",
+          "img": "//pm1.narvii.com/7245/23182c44203b51a5149a818ecacfff29759c632dr1-512-268v2_hq.jpg",
           "gender": "Male",
           "age": "Adult",
           "eye_color": "Green",
@@ -915,7 +915,7 @@ export default {
         {
           "id": "079db09e-0441-442b-8c17-af5cac8321c4",
           "name": "Seiji Amasawa",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/c/ca/Seiji.png",
+          "img": "//pm1.narvii.com/7245/826da4018d0ae67b8bb01f2186413fb3c08881ber1-512-281v2_hq.jpg",
           "gender": "Male",
           "age": "15",
           "eye_color": "Black",
@@ -925,7 +925,7 @@ export default {
         {
           "id": "494bba43-9f61-4383-a597-5bae6ab26222",
           "name": "Yuko Harada",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/b/b5/Yuko.png",
+          "img": "//pm1.narvii.com/7245/bf22a19c74829a5ce295dbf302e6dfc5105f6da0r1-512-276v2_hq.jpg",
           "gender": "Female",
           "age": "14",
           "eye_color": "Black",
@@ -945,7 +945,7 @@ export default {
         {
           "id": "182c1f2a-e1e0-4035-b87a-754d58ed6e2d",
           "name": "Seiya Tsukishima",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/f/fb/Seiya_%281%29.jpg",
+          "img": "https://cdn.myanimelist.net/images/characters/8/253323.jpg",
           "gender": "Male",
           "age": "40",
           "eye_color": "Black",
@@ -955,7 +955,7 @@ export default {
         {
           "id": "d92e61f3-f525-4740-9f06-c9e7b19c3d11",
           "name": "Asako Tsukishima",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/1/14/Asako_Tsukishima.png",
+          "img": "https://cdn.myanimelist.net/images/characters/16/352114.webp",
           "gender": "Female",
           "age": "39",
           "eye_color": "Black",
@@ -975,7 +975,7 @@ export default {
         {
           "id": "e40b4241-612b-402f-8e6c-067c44e9c618",
           "name": "Shiho Tsukishima",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/8/8c/Shiho.jpg",
+          "img": "//pm1.narvii.com/7245/a9bd2b5a83194351b7e981026758e33e22d7a8ecr1-512-276v2_hq.jpg",
           "gender": "Female",
           "age": "18",
           "eye_color": "Black",
@@ -1131,7 +1131,7 @@ export default {
         {
           "id": "615aa48d-8673-4117-b35a-79cb67af1897",
           "name": "Forest",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/3/3a/Forest.jpg",
+          "img": "http://cdn29.us1.fansshare.com/images/princessmononoke/mononoke-forest-spirit-714535937.jpg",
           "climate": "Tropical",
           "terrain": "Forest",
           "surface_water": "60",
@@ -1376,7 +1376,7 @@ export default {
         {
           "id": "3042818d-a8bb-4cba-8180-c19249822d57",
           "name": "Cat King",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/3/37/Cat_King.jpg",
+          "img": "https://pbs.twimg.com/media/EU1P0n0UYAEGEnm?format=jpg&name=large",
           "gender": "Male",
           "age": "87",
           "eye_color": "Emerald",
@@ -1396,7 +1396,7 @@ export default {
         {
           "id": "a3d8e70f-46a0-4e5a-b850-db01620d6b92",
           "name": "Haru Yoshioka",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/5/5c/Haru_Yoshioka_human.jpg",
+          "img": "https://i.pinimg.com/originals/91/a5/fe/91a5fe2adf634b64996116a4fc36c877.png",
           "gender": "Female",
           "age": "17",
           "eye_color": "Brown",
@@ -1426,7 +1426,7 @@ export default {
         {
           "id": "5b2a28f6-91d4-4382-aedc-b27094e763b0",
           "name": "Prince Lune",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/d/d4/Prince_lune.jpg",
+          "img": "https://i.pinimg.com/originals/ac/7c/e3/ac7ce38faba97cd2092d3bafcb822171.jpg",
           "gender": "Male",
           "age": "Adult",
           "eye_color": "Dark brown",
@@ -1612,7 +1612,7 @@ export default {
         {
           "id": "2354305f-dccd-4c44-a79e-cc60ba7376e6",
           "name": "Howl's castle",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/1/12/HowlCastle.png",
+          "img": "https://numpaint.com/wp-content/uploads/2021/02/howls-moving-castle-studio-ghibli-paint-by-number-510x639.jpg",
           "description": "Wizard Howl's home. It's scale changes from scene to scene.",
           "vehicle_class": "Moving castle",
           "length": "unknown",
@@ -1892,7 +1892,7 @@ export default {
         {
           "id": "89026b3a-abc4-4053-ab1a-c6d2eea68faa",
           "name": "Karigurashi/Arrietty",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/6/6f/Arrietty.png",
+          "img": "https://www.chocolatesparalucia.com/wp-content/uploads/2011/10/vlcsnap-2011-10-24-11h45m02s121.jpg",
           "gender": "Female",
           "age": "14",
           "eye_color": "Black",
@@ -2091,7 +2091,7 @@ export default {
         {
           "id": "be837047-cd6f-477f-a83d-5aec9ed1dda7",
           "name": "Coquelicot Manor",
-          "img": "",
+          "img": "https://cdna.artstation.com/p/assets/images/images/026/207/908/large/chan-kai-hong-umi-shun.jpg?1592230233",
           "climate": "Warm",
           "terrain": "Hill",
           "surface_water": "30",
