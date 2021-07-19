@@ -1,13 +1,17 @@
-import { example, anotherExample } from '../src/data.js';
+import { filterMovies, anotherExample } from '../src/data.js';
 
 
-describe('example', () => {
+describe('filterMovies', () => {
   it('is a function', () => {
-    expect(typeof example).toBe('function');
+    expect(typeof filterMovies).toBe('function');
   });
 
-  it('returns `example`', () => {
-    expect(example()).toBe('example');
+  it('returns `peliculas de Hiroyuki Morita como director`', () => {
+    expect(filterMovies()).toBe('example');
+  });
+
+  it('returns `peliculas de Isao Takahata como productor`', () => {
+    expect(filterMovies()).toBe('example');
   });
 });
 
