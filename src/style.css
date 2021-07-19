@@ -4,29 +4,116 @@ body{
     display: flex;
     flex-wrap: wrap;
     font-family: 'Montserrat', sans-serif;
+    background-color: #0c2d3d;
     cursor:  url('data:image/x-icon;base64,AAACAAEAICAQAAAAAADoAgAAFgAAACgAAAAgAAAAQAAAAAEABAAAAAAAAAIAAAAAAAAAAAAAEAAAAAAAAAAAAAAAxPj/AA2UGAD///8Aj4d+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABEREREREREREAAAAAAAAAARAABEREREURAAAAAAAAABEQDMAEREREURAAAAAAAAARAMzMwEREREUQAAAAAAAAEQDMzMBERERFEAAAAAAAARAADMwERERERFAQAAAAAAEREQAMBERERERQEAAAAAABERERAFBQUFBQUBAAAAAAAREREQAERQRFBFAQAAAMwAAAAREAREREREUQEAAADMzADMAAABBQUFBFARAAAAzMzMzMwEBFBEUEUREQAAAMzMzMzMBEREREURERAAAADMzMzMzMAREREREREQAAAAzMzMzMzMwAERERERAAAAAMzMzMzMzMzBEQzNEAAAAADMzMzMzMzMEREMDRAAAAAAzMzMzMzMwRERDM0QAAAAAMzMzMzMzBEQARERAAAAAADMzMzMzMABAIgREQAAAAAAzMzMzMwAiAiAgRAAAAAAAMzMzMzBAAiIiIEAAAAAAADMzMzMAQAAiIABAAAAAAAAzMzMwBEQAAgAERAAAAAAAMzMzAAREAAIABEQAAAAAADMzMAAERAAAAAREAAAAAAAzMwAABEQAAAAERAAAAAAAMzAAAABAAAAAAEAAAAAAADMAAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AAB//gAAP/4AAD/8AAAf/AAAH/wAAA/4AAAH+AAAB/gAAAcYAAAHAAAABwAAAAcAAAAHAAAADwAAAA8AAAAfAAAAPwAAAD8AAAA/AAAAfwAAAH8AAAD/AAAA/wAEAf8AAiD/AIIg/wGDYP8Dg+D/B8fx/w/v+/8f////P////w=='), auto;
 }
 
-header{
-    background-color: #333;
-    flex: 100%;
+a,
+h1,
+h2{
+    font-family: 'Poppins', sans-serif;
+}
+
+li{
+    color:whitesmoke;
+}
+
+.ghiblimovies{
     width: 100%;
-    position: fixed;
+    padding:0;
+    margin:0;
+    display: flex;
+    flex-wrap: wrap;
+}
+header{
+    width: 99.25vw;
+    height: 90px;
+    top: 0;
+    left: 0;
+    background-color: #0c2d3da9;
+    position: absolute;
+    top:0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    color: whitesmoke;
+    box-shadow: 18px;
+}
+
+header a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+header a:visited{
+    text-decoration: none;
+}
+
+a:hover{
+    color: #ffd092;
+}
+
+#up-media{
+    width: fit-content;
+    height: fit-content;
+}
+
+#up-media i{
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+.social-media{
+    width: 20px;
+    display: flex;
+    flex: wrap;
+}
+
+#headerlogo{
+    width: 150px;
+}
+
+.cover{
+    overflow: hidden;
+}
+
+.slider{
+    display: flex;
+    width: 400vw;
+}
+.headergif {
+    width: 100vw;
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+}
+.headergif.gif1 {
+    background-image: url("/src/multimedia/totoromovie.gif");
+}
+.headergif.gif2 {
+    background-image: url("/src/multimedia/ponyomovie.gif");
+}
+.headergif.gif3 {
+    background-image: url("/src/multimedia/chihiromovie.gif");
+}
+.headergif.gif4 {
+    background-image: url("/src/multimedia/kikimovie.gif");
 }
 
 main{
-    margin-top: 164px;
-    background-color: #3D534B;
+    background-color: #0c2d3d;
     flex: 80%;
     padding-bottom: 30px;
     min-height: 70vh;
 }
 
 aside{
-    margin-top: 164px;
-    background-color: #3D534B;
+    background-color: #0c2d3d;
     flex: 20%;
-    min-height: 70vh;
+    height: fit-content;
+    position: sticky;
+    top: 0;
 }
 
 footer{
@@ -35,15 +122,27 @@ footer{
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
-    background-color: #333;
+    background-color: #0a2431de;
     text-align: center;
     height: 100px;
     color: whitesmoke;
 }
 
-footer img{
-    width: 20px;
-    height: 20px;
+footer a{
+    text-decoration: none;
+    color: rgb(81, 147, 167);
+}
+
+footer a i{
+    font-size: 20px;
+    margin: 3px;
+}
+
+footer #ghibli-logo{
+    position: relative;
+    top: 38px;
+    width: 100px;
+    height: 120px;
 }
 
 footer div{
@@ -56,54 +155,125 @@ footer p{
 
 }
 
-.social-media{
-    width: 20px;
+.infoGhibli{
+    flex: 100vw;
     display: flex;
     flex: wrap;
+    padding: 20px 50px 20px 50px;
+    background-color: #45b8db;
+    justify-content: center;
+    align-items: center;
+}
+#ghiblitext{
+    flex: 50%;
+    color: whitesmoke;
+    text-align: justify;
+    text-justify: auto;
+    background-color: #09222e6b;
+    border-radius: 10px;
+    padding: 15px;
+}
+#ghibliphoto{
+    margin-left: 50px;
+    flex: 50%;
+    background-image: url("/src/multimedia/logototoro.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 300px;
+    height: 400px;
 }
 
-#up-media{
-    position: absolute;
-    top: 3%;
-    right: 5%;
+.hayaoMiyazaki{
+    flex: 100vw;
+    display: flex;
+    flex: wrap;
+    padding: 20px 50px 20px 50px;
+    background-color: #45b8db;
+    justify-content: center;
+    align-items: center;
 }
 
-#up-media img{
-    width: 20px;
-    height: 20px;
-    margin-right: 5px;
+#hayaophoto{
+    flex: 50%;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 300px;
+    border: 3px solid #09222ee8;
+    border-radius: 15px;
 }
-
-#ghibli-logo{
-    width: 200px;
-    display: block;
-    margin: auto;
+#hayaotext{
+    flex: 50%;
+    color: whitesmoke;
+    text-align: justify;
+    text-justify: auto;
+    background-color: #09222e6b;
+    border-radius: 10px;
+    padding: 15px;
+    max-width: 850px;
+    height: fit-content;
+    margin-left: 50px;
 }
-
-.sortby{
+/*sortBy*/
+ul , ol {
+    list-style: none;
+}
+.nav {
+    margin: 0;
     border: none;
     border-radius: 5px;
-    background-color: #B6D96C;
+    background-color: #76dfff;
     width: 190px;
-    height: 40px;
-    padding: 5px;
+    height: 30px;
+    padding: 2px;
     margin-top: 20px;
     margin-left: 50px;
     font-family: 'Fira Sans Condensed', sans-serif;
     font-weight: 600;
     color: #3D534B;
 }
-
-
-#sortby span{
-    margin-left: 5px;
+.nav li {
+    background-color: #76dfff;
+    color: black;
+    text-decoration: none;
+    padding: 8px;
+    display: block;
+    width: 174px;
+    height: 14px;
+    text-align: center;
+    justify-content: center;
 }
 
-#sortby img{
-    margin-left: 120px;
-    margin-top: 5px;
-    width: 10px;
+.nav li #byAlphaAtoZ{
+    border-radius: 5px 5px 0 0;
 }
+
+.nav li #byRate{
+    border-radius: 0 0 5px 5px;
+}
+
+.nav li:hover {
+    background-color: #258bbe;
+    color: #ffd092;
+}
+
+.nav > li {
+    float: left;
+}
+
+.nav li ul {
+    display: none;
+    position: absolute;
+    min-width: 140px;
+}
+
+.nav li:hover > ul {
+    display: block;
+}
+
+
 
 
 #searchbar{
@@ -111,7 +281,7 @@ footer p{
     margin-top: 20px;
     border: none;
     border-radius: 5px;
-    background-color: #B6D96C;
+    background-color: #d1d1d18a;
     width: 195px;
     padding: 5px;
 }
@@ -130,7 +300,7 @@ footer p{
 #filtertext{
     text-align: center;
     color: #959b87;
-    font-family: 'Fira Sans Condensed', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 20px;
 }
@@ -139,14 +309,14 @@ footer p{
     margin: auto;
     width: 200px;
     height: fit-content;
-    background-color: #b1c3b2ab;
+    background-color: #258bbe60;
     border-radius: 5px;
     box-sizing: border-box;
 }
 
 .filterbox p{
     box-sizing: border-box;
-    background-color: #B6D96C;
+    background-color: #76dfff;
     width: 100%;
     border-radius: 5px 5px 5px 5px;
     padding: 3px;
@@ -171,7 +341,7 @@ footer p{
     width: 167px;
     height: 290px;
     border-radius: 5px;
-    background-color: #b1c3b2ab;
+    background-color: #258bbe60;
     margin: 30px;
     cursor: url('data:image/x-icon;base64,AAACAAEAICAAAAkAAQCoEAAAFgAAACgAAAAgAAAAQAAAAAEAIAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFxcXkwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABcXF6IXFxf/FxcX/xcXF/8XFxf/FxcX/xcXF/8XFxf/FxcX/xcXF/8XFxf/FxcX/xcXF/8XFxf/FxcX/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABcXF5MXFxeTFxcXkwAAAAcAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFxcXohcXF/8XFxf/FxcX/xcXF/8XFxf/FxcX/xcXF/8XFxf/FxcX/xcXF/8XFxf/FxcX/xcXF/8XFxf/AAAAAAAAAAAAAAAAAAAAAAAAAAAXFxeTFxcXkxcXF/8XFxeTFxcXkwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAXFxeiFxcX/xcXF/8XFxf/FxcX/xcXF/8XFxf/4/j//+P4///j+P//4/j//+P4///j+P//FxcX/xcXF/8AAAAAAAAAAAAAAAAAAAAAAAAAABcXF5MXFxf/FxcX/xcXF/8XFxeTAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABcXF6IXFxf/FxcX/xcXF/8XFxf/FxcX/+P4///j+P//4/j//+P4///j+P//4/j//+P4///j+P//FxcX/wAAAAAAAAAAAAAAAAAAAAAXFxeTFxcXkxcXF/8XFxf/FxcX/xcXF/8XFxeTAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFxcXohcXF/8XFxf/FxcX/xcXF//j+P//4/j//+P4///j+P//4/j//+P4///j+P//4/j//+P4///j+P//AAAAAAAAAAAAAAAAAAAAABcXF5MXFxf/FxcX/xcXF/8XFxf/FxcX/xcXF5MXFxeTFxcXkxcXF5MXFxeTFxcXkxcXF5MXFxeiFxcX/xcXF/8XFxf/4/j//+P4///j+P//4/j//+P4///j+P//4/j//+P4///j+P//4/j//+P4//8AAAAAAAAAAAAAAAAXFxeTFxcXkxcXF/8XFxf/FxcX/xcXF/8XFxf/FxcXkxcXF5MXFxf/FxcX/xcXF/8XFxf/FxcX/xcXF5MXFxeiFxcX/+P4///j+P//4/j//+P4///j+P//FxcX/xcXF/8XFxf/FxcX/+P4///j+P//4/j//wAAAAAAAAAAAAAAABcXF5MXFxf/FxcX/6GClP+hgpT/oYKU/xcXF/8XFxf/FxcXkxcXF/8XFxf/FxcX/xcXF/8XFxf/FxcX/xcXF5MXFxf//////+P4///j+P//4/j//+P4///j+P//4/j//+P4///j+P//4/j//+P4///j+P//AAAAAAAAAAAAAAAAFxcXkxcXF/8XFxf/oYKU/+P4//+hgpT/FxcX/xcXF/8XFxeTFxcX/xcXF/8XFxf/FxcX/xcXF/8XFxf/FxcX/xcXF////////////+P4///j+P//4/j//+P4///j+P//4/j//+P4///j+P//4/j//+P4//8AAAAAAAAAAAAAAAAXFxeTFxcXkxcXF/+hgpT/oYKU/6GClP8XFxf/FxcXkxcXF5MXFxf/FxcX/xcXF/8XFxf/FxcX/xcXF/8XFxf/FxcX////////////oYKU/+P4///j+P//4/j//+P4///j+P//4/j//+P4//+hgpT/4/j//wAAAAAAAAAAAAAAAAAAAAAXFxeTFxcX/xcXF/8XFxf/FxcX/xcXF/8XFxeTFxcX/xcXF/8XFxf/FxcX/xcXF/8XFxf/FxcX/xcXF/8XFxf///////////+hgpT/oYKU/+P4///j+P//4/j//+P4///j+P//oYKU/6GClP/j+P//AAAAAAAAAAAAAAAAAAAAAAAAAAAXFxeTFxcXkxcXF5MXFxeTFxcXkxcXF/8XFxf/FxcX/xcXF/8XFxf/FxcX/xcXF/8XFxf/FxcX/xcXF////////////6GClP+hgpT/4/j//+P4///j+P//4/j//+P4//+hgpT/oYKU/+P4//8AAAAAAAAAAAAAAAEAAAAAAAAAABcXF5MhISD/FxcX/xcXF/8XFxf/FxcX/xcXF/8XFxf/FxcX/xcXF/8XFxf/FxcX/xcXF/8XFxf/FxcX////////////4/j//+P4///j+P//4/j//97z+v/e8/r/4/j//+P4///j+P//4/j//wAAAAAAAAAAAAAABwAAAAAXFxeTISEg/xcXF/8XFxf/FxcX/xcXF/8XFxf/FxcX/xcXF/8XFxf/FxcX/xcXF/8XFxf/FxcX/xcXF/8XFxf//////xcXF/8XFxf/FxcX/+P4///e8/r/3vP6/97z+v/e8/r/FxcX/xcXF/8XFxf/AAAAAAAAAAYAAAAAAAAAABcXF5MhISD/FxcX/xcXF/8XFxf/FxcX/xcXF/8XFxf/FxcX/xcXF/8XFxf/FxcX/xcXF/8XFxf/FxcX/xcXF///////FxcX/xcXF/8XFxf/3vP6/97z+v/e8/r/3vP6/97z+v8XFxf/FxcX/xcXF/8AAAAAAAAAAAAAAAAXFxeTISEg/yEhIP8XFxf/FxcX/xcXF/8XFxf/FxcX/xcXF/8XFxf/FxcX/xcXF/8XFxf/FxcX/xcXF/8XFxf/FxcX////////////3vP6/97z+v/e8/r/3vP6/97z+v/e8/r/3vP6/+P4///j+P//4/j//wAAAAAAAAAAFxcXkxcXF5MhISD/FxcX/xcXF/8XFxf/FxcX/xcXF/8XFxf/FxcX/xcXF/8XFxf/FxcX/xcXF/8XFxf/FxcX/xcXF/8XFxf//////97z+v+hgpT/oYKU/97z+v/e8/r/3vP6/97z+v/e8/r/oYKU/6GClP/j+P//AAAAABcXF5MhISD/ISEg/yEhIP8XFxf/FxcX/xcXF/8XFxf/FxcX/xcXF/8XFxf/FxcX/xcXF/8XFxf/FxcX/xcXF/8XFxf/FxcX/xcXF//e8/r/3vP6/97z+v+hgpT/3vP6/97z+v/e8/r/3vP6/97z+v+hgpT/4/j//+P4//8XFxeTISEg/yEhIP8XFxf/FxcX/xcXF/8XFxeTFxcXkyEhIP8XFxf/FxcX/xcXF/8XFxf/FxcX/xcXF/8XFxf/FxcX/xcXF/8XFxf/FxcX/xcXF//e8/r/3vP6/97z+v/e8/r/3vP6/97z+v/Z8vr/3vP6/97z+v/j+P//4/j//xcXF5MhISD/ISEg/yEhIP8hISD/ISEg/xcXF5MXFxeiISEg/xcXF/8XFxf/FxcX/xcXF/8XFxf/FxcX/xcXF/8XFxf/FxcXkxcXF/8XFxf/ISEg/xcXF//e8/r/3vP6/97z+v/e8/r/3vP6/97z+v/e8/r/3vP6/+P4//8XFxf/AAAAABcXF5MXFxeTFxcXkxcXF5MXFxeTAAAADRcXF6IhISD/FxcX/xcXF/8XFxf/FxcX/xcXF/8XFxf/FxcX/xcXF/8XFxeTFxcX/xcXF/8XFxeTISEg/xcXF//e8/r/3vP6/97z+v/e8/r/3vP6/97z+v/e8/r/3vP6/xcXF/8AAAAAAAAAAAAAAAUAAAAJAAAACgAAAAIAAAACFxcXoiEhIP8XFxf/FxcX/xcXF/8XFxf/FxcX/xcXF5MXFxf/FxcX/xcXF5MXFxf/FxcX/xcXF5MXFxfAISEg/xcXF/8XFxf/FxcX/xcXF/8XFxf/FxcX/xcXF/8XFxf/FxcX/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAXFxeTISEg/xcXF/8XFxf/FxcXkxcXF/8XFxf/FxcXkxcXF/8XFxf/FxcXkxcXF5MXFxeTAAAAAAAAAAAXFxeiISEg/yEhIP8XFxf/FxcX/xcXF/8XFxf/FxcX/xcXF/8XFxf/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAABcXF5MhISD/FxcX/xcXF/8XFxeTFxcX/xcXF/8XFxeTFxcX/xcXF/8XFxeTAAAAAAAAAAAAAAAAAAAAAwAAAAEXFxeiFxcXoiEhIP8hISD/FxcX/xcXF/8XFxf/FxcX/xcXF/8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAFxcXkyEhIP8XFxf/FxcX/xcXF5MXFxf/FxcX/xcXF5MXFxeTFxcXkwAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAFxcXohcXF8AXFxeiFxcXohcXF6IXFxeiFxcXogAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAXFxeTISEg/xcXF/8XFxf/FxcXkxcXF5MXFxeTAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAABcXF5MhISD/FxcX/xcXF/8XFxeTAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAFxcXkyEhIP8XFxf/FxcX/xcXF5MAAAAAAAAAAAAAAAAAAAAAAAAABgAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAXFxeTISEg/xcXF/8XFxf/FxcXkwAAAAAAAAAAAAAAAAAAAAAAAAADAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABcXF5MhISD/FxcX/xcXF/8XFxeTAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFxcXkyEhIP8XFxf/FxcX/xcXF5MAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFxcXkxcXF5MXFxeTAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/v+AAPx/gAD4P4AA+D+AAPAfgADwAAAA4AAAAOAAAADgAAAA4AAAAPAAAAD4AAAA+AAAAPAAAADwAAAA4AAAAMAAAACAAAAAAAAAAAAAAACCAAAA/gAAAP4ADAD+AD4A/gB/gP4D///+D////g////4P///+D////g////8f//8='), auto;
 }
@@ -241,6 +411,20 @@ footer p{
     font-size: 22px;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #258bbe60;
+}
+::-webkit-scrollbar-thumb {
+    background: rgb(132, 206, 255);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ffd092;
+}
+
 /*MEDIA QUERIES*/
 @media screen and (max-width: 500px) {
 
@@ -300,49 +484,3 @@ footer p{
         margin-top: 0;
     }
 }
-/*sortBy*/
-ul , ol {
-    list-style: none;
-}
-.nav {
-    margin: 0;
-    border: none;
-    border-radius: 5px;
-    background-color: #B6D96C;
-    width: 190px;
-    height: 40px;
-    padding: 5px;
-    margin-top: 20px;
-    margin-left: 50px;
-    font-family: 'Fira Sans Condensed', sans-serif;
-    font-weight: 600;
-    color: #3D534B;
-}
-.nav li {
-    background-color: #B6D96C;
-    color: black;
-    text-decoration: none;
-    padding: 10px 15px;
-    display: block;
-    width: 162px;
-    height: 18px;
-}
-
-.nav li:hover {
-    background-color: rgb(100, 99, 96);
-}
-
-.nav > li {
-    float: left;
-}
-
-.nav li ul {
-    display: none;
-    position: absolute;
-    min-width: 140px;
-}
-
-.nav li:hover > ul {
-    display: block;
-}
-

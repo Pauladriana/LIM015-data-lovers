@@ -1,6 +1,6 @@
 
 let dataContenedora = JSON.parse(localStorage.getItem("identificador"));
-    //console.log (dataContenedora);
+//console.log (dataContenedora);
 
 //linkea titulo de mi html a mi js';
 let titulo = document.getElementById("title");
@@ -13,6 +13,46 @@ let descriptionPortada = document.getElementById( "descriptionFilms");
 titulo.innerHTML = dataContenedora.title;
 imgPortada.setAttribute("src", dataContenedora.poster);
 descriptionPortada.innerHTML = dataContenedora.description;
+
+//CALCULO DE PERSONAJES
+const allCharacters = dataContenedora.people;
+let sumOfCharacters = 0;
+let maleCharacters = 0;
+let femaleCharacters = 0;
+let unknowGender = 0;
+function charactersSum () {
+    for (let i=0; i < allCharacters.length; i++) {
+        sumOfCharacters += 1;
+    }
+    return sumOfCharacters
+}
+function malesSum () {
+    for (let i=0; i < allCharacters.length; i++) {
+        if (allCharacters[i].gender == "Male") {
+        maleCharacters += 1;
+        }
+    }
+    return maleCharacters
+}
+function femalesSum () {
+    for (let i=0; i < allCharacters.length; i++) {
+        if (allCharacters[i].gender == "Female" ) {
+            femaleCharacters += 1;
+        }
+    }
+    return femaleCharacters
+}
+function unknowSum () {
+    for (let i=0; i < allCharacters.length; i++) {
+        if (allCharacters[i].gender.includes("NA"))
+        unknowGender += 1;
+    }
+    return unknowGender
+}
+document.getElementById("totalcrt").innerHTML = charactersSum();
+document.getElementById("nummale").innerHTML = malesSum();
+document.getElementById("numfemale").innerHTML = femalesSum();
+document.getElementById("numunknow").innerHTML = unknowSum();
 
 //imprimiendo people personajes
 dataContenedora.people.map(ele => {
