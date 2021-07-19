@@ -1,27 +1,31 @@
-import { filterMovies, anotherExample } from '../src/data.js';
+import { filterByDirector, filterByProducer} from '../src/data.js';
 
 
 describe('filterMovies', () => {
   it('is a function', () => {
-    expect(typeof filterMovies).toBe('function');
+    expect(typeof filterByDirector).toBe('function');
   });
 
-  it('returns `peliculas de Hiroyuki Morita como director`', () => {
-    expect(filterMovies()).toBe('example');
+  it('returns `peliculas de Hiroyuki Morita`', () => {
+    expect(filterByDirector()).toBe('example');
   });
 
-  it('returns `peliculas de Isao Takahata como productor`', () => {
-    expect(filterMovies()).toBe('example');
+  it('returns `peliculas de Hiromasa Yonebayashi`', () => {
+    expect(filterByDirector()).toBe('example');
   });
 });
 
 
-describe('anotherExample', () => {
+describe('filterByProducer', () => {
   it('is a function', () => {
-    expect(typeof anotherExample).toBe('function');
+    expect(typeof filterByProducer).toBe('function');
   });
 
-  it('returns `anotherExample`', () => {
-    expect(anotherExample()).toBe('OMG');
+  it('returns `peliculas de Isao Takahata`', () => {
+    expect(filterByProducer()).toBe('OMG');
+  });
+
+  it('returns `peliculas de Toru Hara`', () => {
+    expect(filterByProducer()).toBe('OMG');
   });
 });
