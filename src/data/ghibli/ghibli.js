@@ -10,6 +10,7 @@ export default {
       "poster": "https://static.wikia.nocookie.net/studio-ghibli/images/c/c1/Castle_in_the_Sky.jpg",
       "release_date": "1986",
       "rt_score": "95",
+      "youTube": "<iframe src='https://www.youtube.com/embed/FWjiXOqRKhk' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>",
       "people": [
         {
           "id": "fe93adf2-2f3a-4ec4-9f68-5422f1b87c01",
@@ -84,7 +85,7 @@ export default {
         {
           "id": "fcb4a2ac-5e41-4d54-9bba-33068db083ca",
           "name": "Louis",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/8/80/Louis.jpg",
+          "img": "https://cdn.myanimelist.net/images/characters/15/327932.jpg",
           "gender": "Male",
           "age": "30",
           "eye_color": "Dark brown",
@@ -212,6 +213,7 @@ export default {
       "poster": "https://static.wikia.nocookie.net/studio-ghibli/images/d/db/My_Neighbor_Totoro.jpg",
       "release_date": "1988",
       "rt_score": "93",
+      "youTube": "<iframe width='560' height='315' src='https://www.youtube.com/embed/BjeBG8Xrci8' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>",
       "people": [
         {
           "id": "986faac6-67e3-4fb8-a9ee-bad077c2e7fe",
@@ -360,6 +362,7 @@ export default {
       "poster": "https://static.wikia.nocookie.net/studio-ghibli/images/4/48/Kiki%27s_Delivery_Service_%282%29.jpg",
       "release_date": "1989",
       "rt_score": "96",
+      "youTube": "<iframe width='560' height='315' src='https://www.youtube.com/embed/4bG17OYs-GA' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>",
       "people": [
         {
           "id": "4151abc6-1a9e-4e6a-5678-aac05ra641js",
@@ -448,7 +451,7 @@ export default {
         {
           "id": "62346d33-caa0-4c17-8016-0aca56f3066b",
           "name": "Karikiya",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/5/51/Kiki%27s_House.jpg",
+          "img": "https://i.pinimg.com/originals/8f/38/b3/8f38b3bc01474029a5cfa9ef419c0b56.jpg",
           "climate": "Mild",
           "terrain": "City",
           "surface_water": "30",
@@ -486,6 +489,7 @@ export default {
       "poster": "https://static.wikia.nocookie.net/studio-ghibli/images/a/a5/Grave_of_the_Fireflies_Japanese_poster.jpg",
       "release_date": "1988",
       "rt_score": "97",
+      "youTube": "<iframe width='560' height='315' src='https://www.youtube.com/embed/4vPeTSRd580' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>",
       "people": [
         {
           "id": "8cb959a8-1959-42f3-bb33-07d7a2e6b830",
@@ -550,6 +554,7 @@ export default {
       "poster": "https://static.wikia.nocookie.net/studio-ghibli/images/a/a9/Only_Yesterday.jpg",
       "release_date": "1991",
       "rt_score": "100",
+      "youTube": "<iframe width='560' height='315' src='https://www.youtube.com/embed/x0ZrjocXVJ4' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>",
       "people": [
         {
           "id": "d0bb7b5f-3bf0-46c8-959d-0299b3252bd8",
@@ -564,7 +569,7 @@ export default {
         {
           "id": "3f78eba1-f9b0-489b-8686-f4508cdf049d",
           "name": "Toshio",
-          "img": "http://static.wikia.nocookie.net/studio-ghibli/images/2/23/Toshio.png",
+          "img": "//pm1.narvii.com/6843/d65a0cbc04a7190eb090f15ece66f856421bdc19v2_hq.jpg",
           "gender": "Male",
           "age": "Adult",
           "eye_color": "Black",
@@ -615,7 +620,7 @@ export default {
           "id": "c8f02850-0c1f-499c-8b5e-d8ad16f3ecc4",
           "name": "Yaeko Okajima",
           "gender": "Female",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/0/03/Yaeko.png",
+          "img": "https://i.pinimg.com/originals/da/da/1a/dada1ace97e5cb90bbccf63eec397e4a.png",
           "age": "16",
           "eye_color": "Black",
           "hair_color": "Grey",
@@ -624,7 +629,7 @@ export default {
         {
           "id": "6e960787-5a47-4178-a040-1ef5bf5e4a6c",
           "name": "Tani Tsuneko",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/5/5a/Tani.jpg",
+          "img": "https://ami.animecharactersdatabase.com/uploads/chars/5457-601871977.jpg",
           "gender": "Female",
           "age": "10",
           "eye_color": "Black",
@@ -666,7 +671,7 @@ export default {
         {
           "id": "dbeeaecb-7817-4b8b-90ca-edc432d3033e",
           "name": "Taeko's House",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/c/cf/Only_Yesterday_artwork_%2813%29.jpg", 
+          "img": "https://i.pinimg.com/originals/a4/cf/71/a4cf71f8932514df61929197a1e3717b.jpg", 
           "climate": "Continental",
           "terrain": "River",
           "surface_water": "40",
@@ -686,6 +691,7 @@ export default {
       "poster" : "https://static.wikia.nocookie.net/studio-ghibli/images/4/41/Porco_Rosso.jpg",
       "release_date": "1992",
       "rt_score": "94",
+      "youTube": "<iframe width='560' height='315' src='https://www.youtube.com/embed/awEC-aLDzjs' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>",
       "people": [
         {
           "id": "6523068d-f5a9-4150-bf5b-76abe6fb42c3",
@@ -700,7 +706,7 @@ export default {
         {
           "id": "eff43a47-e59c-41bd-bcc6-b1827d63bed5",
           "name": "Donald Curtis",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/3/3c/Curtis.jpg",
+          "img": "https://external-preview.redd.it/cJCb8QL2PC05gC1T4IZZsRLHUKVtKuYvdKv2rYIEtiI.jpg?auto=webp&s=968e7485d30cffc1df7ca4bb734a272ca123d3ae",
           "gender": "Male",
           "age": "Adult",
           "eye_color": "Brown",
@@ -817,6 +823,7 @@ export default {
       "poster": "https://static.wikia.nocookie.net/studio-ghibli/images/9/9e/Pom_Poko.jpg",
       "release_date": "1994",
       "rt_score": "78",
+      "youTube": "<iframe width='560' height='315' src='https://www.youtube.com/embed/_7cowIHjCD4' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>",
       "people": [
         {
           "id": "575d6943-f9da-445e-8e77-e118c3924a1d",
@@ -891,11 +898,12 @@ export default {
       "poster": "https://static.wikia.nocookie.net/studio-ghibli/images/7/7b/Whisper_of_the_Heart.jpg",
       "release_date": "1995",
       "rt_score": "91",
+      "youTube": "<iframe width='560' height='315' src='https://www.youtube.com/embed/0pVkiod6V0U' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>",
       "people": [
         {
           "id": "42a69bf6-b5e8-42b1-b05a-12c3d05e7c1e",
           "name": "Shizuku Tsukishima",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/d/db/Shizuku_Tsukishima.gif",
+          "img": "//pm1.narvii.com/7245/6d4ce9ebee4837248754a727b5bc9b859677c12ar1-512-479v2_hq.jpg",
           "gender": "Female",
           "age": "14",
           "eye_color": "Black",
@@ -905,7 +913,7 @@ export default {
         {
           "id": "fc196c4f-0201-4ed2-9add-c6403f7c4d32",
           "name": "Baron Humbert von Gikkingen",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/7/73/Baron.jpg",
+          "img": "//pm1.narvii.com/7245/23182c44203b51a5149a818ecacfff29759c632dr1-512-268v2_hq.jpg",
           "gender": "Male",
           "age": "Adult",
           "eye_color": "Green",
@@ -915,7 +923,7 @@ export default {
         {
           "id": "079db09e-0441-442b-8c17-af5cac8321c4",
           "name": "Seiji Amasawa",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/c/ca/Seiji.png",
+          "img": "//pm1.narvii.com/7245/826da4018d0ae67b8bb01f2186413fb3c08881ber1-512-281v2_hq.jpg",
           "gender": "Male",
           "age": "15",
           "eye_color": "Black",
@@ -925,7 +933,7 @@ export default {
         {
           "id": "494bba43-9f61-4383-a597-5bae6ab26222",
           "name": "Yuko Harada",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/b/b5/Yuko.png",
+          "img": "//pm1.narvii.com/7245/bf22a19c74829a5ce295dbf302e6dfc5105f6da0r1-512-276v2_hq.jpg",
           "gender": "Female",
           "age": "14",
           "eye_color": "Black",
@@ -945,7 +953,7 @@ export default {
         {
           "id": "182c1f2a-e1e0-4035-b87a-754d58ed6e2d",
           "name": "Seiya Tsukishima",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/f/fb/Seiya_%281%29.jpg",
+          "img": "https://cdn.myanimelist.net/images/characters/8/253323.jpg",
           "gender": "Male",
           "age": "40",
           "eye_color": "Black",
@@ -955,7 +963,7 @@ export default {
         {
           "id": "d92e61f3-f525-4740-9f06-c9e7b19c3d11",
           "name": "Asako Tsukishima",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/1/14/Asako_Tsukishima.png",
+          "img": "https://cdn.myanimelist.net/images/characters/16/352114.webp",
           "gender": "Female",
           "age": "39",
           "eye_color": "Black",
@@ -975,7 +983,7 @@ export default {
         {
           "id": "e40b4241-612b-402f-8e6c-067c44e9c618",
           "name": "Shiho Tsukishima",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/8/8c/Shiho.jpg",
+          "img": "//pm1.narvii.com/7245/a9bd2b5a83194351b7e981026758e33e22d7a8ecr1-512-276v2_hq.jpg",
           "gender": "Female",
           "age": "18",
           "eye_color": "Black",
@@ -1007,6 +1015,7 @@ export default {
       "poster": "https://static.wikia.nocookie.net/studio-ghibli/images/c/c6/Princess_Mononoke.jpg",
       "release_date": "1997",
       "rt_score": "92",
+      "youTube": "<iframe width='560' height='315' src='https://www.youtube.com/embed/4OiMOHRDs14' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>",
       "people": [
         {
           "id": "ba924631-068e-4436-b6de-f3283fa848f0",
@@ -1131,7 +1140,7 @@ export default {
         {
           "id": "615aa48d-8673-4117-b35a-79cb67af1897",
           "name": "Forest",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/3/3a/Forest.jpg",
+          "img": "http://cdn29.us1.fansshare.com/images/princessmononoke/mononoke-forest-spirit-714535937.jpg",
           "climate": "Tropical",
           "terrain": "Forest",
           "surface_water": "60",
@@ -1151,6 +1160,7 @@ export default {
       "poster": "https://static.wikia.nocookie.net/studio-ghibli/images/d/db/My_Neighbors_the_Yamadas.jpg",
       "release_date": "1999",
       "rt_score": "75",
+      "youTube": "<iframe width='560' height='315' src='https://www.youtube.com/embed/1C9ujuCPlnY' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>",
       "people": [
         {
           "id": "7b3324ad-0ac9-417d-9905-ac001f6b7b1a",
@@ -1215,6 +1225,7 @@ export default {
       "poster": "https://static.wikia.nocookie.net/studio-ghibli/images/9/9e/Spirited_Away.png",
       "release_date": "2001",
       "rt_score": "97",
+      "youTube": "<iframe width='560' height='315' src='https://www.youtube.com/embed/ByXuk9QqQkk' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>",
       "people": [
         {
           "id": "134a568b-ac18-4696-a53e-4f0757d1c037",
@@ -1362,6 +1373,7 @@ export default {
       "poster": "https://static.wikia.nocookie.net/studio-ghibli/images/8/87/The_Cat_Returns.jpg",
       "release_date": "2002",
       "rt_score": "89",
+      "youTube": "<iframe width='560' height='315' src='https://www.youtube.com/embed/Gp-H_YOcYTM' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>",
       "people": [
         {
           "id": "6b3facea-ea33-47b1-96ce-3fc737b119b8",
@@ -1376,7 +1388,7 @@ export default {
         {
           "id": "3042818d-a8bb-4cba-8180-c19249822d57",
           "name": "Cat King",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/3/37/Cat_King.jpg",
+          "img": "https://pbs.twimg.com/media/EU1P0n0UYAEGEnm?format=jpg&name=large",
           "gender": "Male",
           "age": "87",
           "eye_color": "Emerald",
@@ -1396,7 +1408,7 @@ export default {
         {
           "id": "a3d8e70f-46a0-4e5a-b850-db01620d6b92",
           "name": "Haru Yoshioka",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/5/5c/Haru_Yoshioka_human.jpg",
+          "img": "https://i.pinimg.com/originals/91/a5/fe/91a5fe2adf634b64996116a4fc36c877.png",
           "gender": "Female",
           "age": "17",
           "eye_color": "Brown",
@@ -1426,7 +1438,7 @@ export default {
         {
           "id": "5b2a28f6-91d4-4382-aedc-b27094e763b0",
           "name": "Prince Lune",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/d/d4/Prince_lune.jpg",
+          "img": "https://i.pinimg.com/originals/ac/7c/e3/ac7ce38faba97cd2092d3bafcb822171.jpg",
           "gender": "Male",
           "age": "Adult",
           "eye_color": "Dark brown",
@@ -1493,6 +1505,7 @@ export default {
       "poster": "https://static.wikia.nocookie.net/studio-ghibli/images/0/08/Howl%27s_Moving_Castle.jpg",
       "release_date": "2004",
       "rt_score": "87",
+      "youTube": "<iframe width='560' height='315' src='https://www.youtube.com/embed/iwROgK94zcM' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>",
       "people": [
         {
           "id": "fa9b410f-cad4-457d-ac71-86b0afa6cf0a",
@@ -1612,7 +1625,7 @@ export default {
         {
           "id": "2354305f-dccd-4c44-a79e-cc60ba7376e6",
           "name": "Howl's castle",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/1/12/HowlCastle.png",
+          "img": "https://numpaint.com/wp-content/uploads/2021/02/howls-moving-castle-studio-ghibli-paint-by-number-510x639.jpg",
           "description": "Wizard Howl's home. It's scale changes from scene to scene.",
           "vehicle_class": "Moving castle",
           "length": "unknown",
@@ -1632,6 +1645,7 @@ export default {
       "poster": "https://static.wikia.nocookie.net/studio-ghibli/images/0/09/%C3%96v%C3%A4rlden.jpg",
       "release_date": "2006",
       "rt_score": "41",
+      "youTube": "<iframe width='560' height='315' src='https://www.youtube.com/embed/8hxYx3Jq3kI' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>",
       "people": [
         {
           "id": "68df798d-f73d-4c70-b4ad-05dd84910436",
@@ -1738,6 +1752,7 @@ export default {
       "poster": "https://static.wikia.nocookie.net/studio-ghibli/images/5/50/Ponyo_on_the_Cliff_by_the_Sea.jpg",
       "release_date": "2008",
       "rt_score": "92",
+      "youTube": "<iframe width='560' height='315' src='https://www.youtube.com/embed/89LbtkHG0c4' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>",
       "people": [
         {
           "id": "a10f64f3-e0b6-4a94-bf30-87ad8bc51607",
@@ -1888,11 +1903,12 @@ export default {
       "poster": "https://static.wikia.nocookie.net/studio-ghibli/images/4/46/The_Borrower_Arrietty.jpg",
       "release_date": "2010",
       "rt_score": "95",
+      "youTube": "<iframe width='560' height='315' src='https://www.youtube.com/embed/VlMe7PavaRQ' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>",
       "people": [
         {
           "id": "89026b3a-abc4-4053-ab1a-c6d2eea68faa",
           "name": "Karigurashi/Arrietty",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/6/6f/Arrietty.png",
+          "img": "https://www.chocolatesparalucia.com/wp-content/uploads/2011/10/vlcsnap-2011-10-24-11h45m02s121.jpg",
           "gender": "Female",
           "age": "14",
           "eye_color": "Black",
@@ -2005,6 +2021,7 @@ export default {
       "poster": "https://static.wikia.nocookie.net/studio-ghibli/images/b/bb/From_Up_on_Poppy_Hill.jpg",
       "release_date": "2011",
       "rt_score": "83",
+      "youTube": "<iframe width='560' height='315' src='https://www.youtube.com/embed/9-rhgSCAqDU' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>",
       "people": [
         {
           "id": "6a486237-c503-4221-b834-1862f200e939",
@@ -2091,7 +2108,7 @@ export default {
         {
           "id": "be837047-cd6f-477f-a83d-5aec9ed1dda7",
           "name": "Coquelicot Manor",
-          "img": "",
+          "img": "https://cdna.artstation.com/p/assets/images/images/026/207/908/large/chan-kai-hong-umi-shun.jpg?1592230233",
           "climate": "Warm",
           "terrain": "Hill",
           "surface_water": "30",
@@ -2111,6 +2128,7 @@ export default {
       "poster": "https://static.wikia.nocookie.net/studio-ghibli/images/2/2d/The_Wind_Rises.jpg",
       "release_date": "2013",
       "rt_score": "89",
+      "youTube": "<iframe width='560' height='315' src='https://www.youtube.com/embed/2QFBZgAZx7g' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>",
       "people": [
         {
           "id": "97746fd8-1875-4331-8bc6-f43ae25501cd",
@@ -2230,6 +2248,7 @@ export default {
       "poster": "https://static.wikia.nocookie.net/studio-ghibli/images/8/87/The_Tale_of_the_Princess_Kaguya.jpg",
       "release_date": "2013",
       "rt_score": "100",
+      "youTube": "<iframe width='560' height='315' src='https://www.youtube.com/embed/W71mtorCZDw' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>",
       "people": [
         {
           "id": "a8b338c0-e586-4c1c-8857-f33540d0d4d7",
@@ -2336,6 +2355,7 @@ export default {
       "poster": "https://static.wikia.nocookie.net/studio-ghibli/images/7/7a/When_Marnie_Was_There.jpg",
       "release_date": "2014",
       "rt_score": "92",
+      "youTube": "<iframe width='560' height='315' src='https://www.youtube.com/embed/jjmrxqcQdYg' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>",
       "people": [
         {
           "id": "4a6a60d1-cb07-464f-889c-fecaff19b4ef",

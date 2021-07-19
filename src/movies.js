@@ -7,13 +7,16 @@ let dataContenedora = JSON.parse(localStorage.getItem("identificador"));
 let titulo = document.getElementById("title");
 let imgPortada = document.getElementById("imgFilms");
 let descriptionPortada = document.getElementById( "descriptionFilms");
-//let characterImgMovie = data.films.map((film) => film.people);
 
+//MOSTAR TRAILER
+let trailer = document.getElementById('player');
+trailer.innerHTML = dataContenedora.youTube;
 
 //linkea todo el html  y lo trae al Js';
 titulo.innerHTML = dataContenedora.title;
 imgPortada.setAttribute("src", dataContenedora.poster);
 descriptionPortada.innerHTML = dataContenedora.description;
+console.log(dataContenedora.youTube);
 
 //CALCULO DE PERSONAJES
 const allCharacters = dataContenedora.people;
@@ -109,4 +112,6 @@ const ghibliLogo = document.querySelector("#ghibli-logo");
 ghibliLogo.addEventListener("click", function(){
     window.open("index.html", "_self")
 })
+
+//VIDEO DE PELICULAS
 
