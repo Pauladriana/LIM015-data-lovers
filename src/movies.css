@@ -14,63 +14,55 @@ body {
 
 h1{
     font-size:3rem;
-    line-height: 1.3em;
+
 }
 
 .title{
-    color: white;
+    color: #ffd092;
     text-align: center;
-    margin: auto;
-    padding: 3%
-}
-
-.totoroPng{
-    width: 200px;
-    display: block;
     margin: auto;
 }
 
 .containerPosterFilms{
     display: flex;
     padding: 40px 50px 40px 50px;
-    background-color: #45b8db;
+    background-color: #45b8dbc7;
     justify-content: center;
     align-items: center;
-    margin: 50px;
+    margin: 30px;
     border-radius: 35px;
 }
-.containerPosterFilms p,
-.containerPosterFilms img{
-    flex: 50%
+
+#posterFilms{
+    flex: 30%;
+    width: fit-content;
 }
-.posterFilms{
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    font-size: 18px;  
+
+#textFilms{
+    flex: 65%;
+    padding: 25px;
+    background-color: #0b354bec;
+    border-radius: 15px;
 }
 
 .imgFilms{
     width: 15rem;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
 }
 
 .descriptionFilms{
     color: whitesmoke;
     text-align: justify;
-    background-color: rgba(9, 34, 46, 0.42);
-    border-radius: 31px;
-    padding: 58px;
-    font-size: 25px;
-    margin-left: 39px;
+    font-size: 20px;
 }
 
 .player {
     width: 80%;
     height: 658px;
-    margin-top: 47px;
-    padding-left: 192px;
+    margin: auto;
+    margin-bottom: 35px;
 }
 
 .player iframe{
@@ -80,7 +72,6 @@ h1{
     border-radius: 35px;
 }
 p{
-    margin-bottom: 1.6em;
     color: white;
 }
 
@@ -92,32 +83,52 @@ p{
 }
 
 header{
-    background-color: #0c2d3da9;
-    flex: 100%
+    width: 99.25vw;
+    height: 90px;
+    top: 0;
+    left: 0;
+    background-color: #0b354bec;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    color: whitesmoke;
+    box-shadow: 18px;
 }
+header a{
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: 900;
+}
+
+header a:visited{
+    text-decoration: none;
+}
+
+a:hover{
+    color: #ffd092;
+}
+
+#up-media{
+    width: fit-content;
+    height: fit-content;
+}
+
+#up-media i{
+    margin-right: 5px;
+    font-size: 20px;
+}
+
 .social-media{
     width: 20px;
     display: flex;
     flex: wrap;
 }
 
-#up-media{
-    position: absolute;
-    top: 3%;
-    right: 5%;
+#headerlogo{
+    width: 150px;
 }
 
-#up-media img{
-    width: 20px;
-    height: 20px;
-    margin-right: 5px;
-}
-
-#ghibli-logo{
-    width: 200px;
-    display: block;
-    margin: auto;
-}
 
 
 .containerLogo{
@@ -127,7 +138,7 @@ header{
 }
 
 .main{
-    background-color: #0c2d3d;;
+    background-color: #0c2d3d;
     padding-bottom: 2rem;
     width: 100%;
     margin-top: 0;
@@ -141,10 +152,20 @@ footer{
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
-    background-color: #0a2431de;
+    background-color: #0b354bec;
     text-align: center;
     height: 100px;
     color: whitesmoke;
+}
+
+footer a{
+    text-decoration: none;
+    color: rgb(81, 147, 167);
+}
+
+footer a i{
+    font-size: 20px;
+    margin: 3px;
 }
 
 footer img{
@@ -180,7 +201,7 @@ footer p{
 .containerVehicles,
 .containerPeople{
     width: 250px;
-    height: 300px;
+    height: 200px;
     background-color: black;
     margin: 40px;
     border-radius: 5px;
@@ -201,16 +222,33 @@ footer p{
 
 .table {
     width: 250px;
-    height: 300px;
+    height: fit-content;
     background-color: black;
-    margin: 40px;
+    margin: auto;
+    margin-top: 35px;
     border-radius: 5px;
     text-align: center;
-    color: white;
-    background-color:rgba(145, 198, 223, 0.42);;
+    background-color:rgba(145, 198, 223, 0.096);;
     border: 5px solid #d8d8d8;
     justify-content: center;
-    
+}
+#totalcrt{
+    font-weight: 900;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #0c2d3dc9;
+}
+::-webkit-scrollbar-thumb {
+    background: rgb(108, 233, 255);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ffd092;
+}
 
 /*MEDIA QUERIES*/
 
@@ -238,10 +276,10 @@ footer p{
         justify-content: center;
         margin: 3%;
     }
-}
 
 .cnt-main-description{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
 }

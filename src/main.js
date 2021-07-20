@@ -2,6 +2,7 @@ import data from './data/ghibli/ghibli.js';
 import {filterByDirector, filterByProducer, ordenAlfaAtoZ, ordenAlfaZtoA, yearMovie, scoreMovie} from '../src/data.js';
 
 let films = data.films;
+export const allFilms = data.films;
 
 //Importamos la data de Ghibli
 const filmTitles = films.map((film) => film.title);
@@ -205,20 +206,10 @@ producerNishimura.addEventListener("click", function() {
 });
 
 //HACER CLICK EN CABECERA PARA QUE ME MUESTRE TODAS LAS PELICULAS
-const ghibliLogo = document.querySelector("#headerlogo");
-ghibliLogo.addEventListener("click", function(){
+const unfilter = document.querySelector("#unfilterbox");
+unfilter.addEventListener("click", function(){
     document.getElementsByClassName("cardscontainer")[0].innerHTML = "";
-    directorHayao.style.color = "whitesmoke";
-    directorIsao.style.color = "whitesmoke";
-    directorYoshifumi.style.color = "whitesmoke";
-    directorHiroyuki.style.color = "whitesmoke";
-    directorGoro.style.color = "whitesmoke";
-    directorHiromasa.style.color = "whitesmoke";
-    producerTakahata.style.color = "whitesmoke";
-    producerMiyazaki.style.color = "whitesmoke";
-    producerHara.style.color = "whitesmoke";
-    producerSuzuki.style.color = "whitesmoke";
-    producerNishimura.style.color = "whitesmoke";
+    colorFilter();
     allMovies();
     document.querySelector("#search-input").value = ""
 

@@ -1,17 +1,17 @@
 import { filterByDirector, filterByProducer} from '../src/data.js';
+const allFilms = require('../src/data.js')
 
-
-describe('filterMovies', () => {
+describe('filterByDirector', () => {
   it('is a function', () => {
     expect(typeof filterByDirector).toBe('function');
   });
 
   it('returns `peliculas de Hiroyuki Morita`', () => {
-    expect(filterByDirector()).toBe('example');
+    expect(filterByDirector(allFilms, "Hiroyuki Morita")).toContain('The Cat Returns');
   });
 
   it('returns `peliculas de Hiromasa Yonebayashi`', () => {
-    expect(filterByDirector()).toBe('example');
+    expect(filterByDirector(allFilms, "Hiromasa Yonebayashi")).toContain('When Marnie Was There');
   });
 });
 
@@ -22,10 +22,10 @@ describe('filterByProducer', () => {
   });
 
   it('returns `peliculas de Isao Takahata`', () => {
-    expect(filterByProducer()).toBe('OMG');
+    expect(filterByProducer(allFilms, "Isao Takahata")[0].title).toBe('Castle in the Sky');
   });
 
   it('returns `peliculas de Toru Hara`', () => {
-    expect(filterByProducer()).toBe('OMG');
+    expect(filterByProducer(allFilms, "Toru Hara")).toBe('Grave of the Fireflies');
   });
 });
