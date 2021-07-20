@@ -12,33 +12,51 @@ body {
     cursor:  url('data:image/x-icon;base64,AAACAAEAICAQAAAAAADoAgAAFgAAACgAAAAgAAAAQAAAAAEABAAAAAAAAAIAAAAAAAAAAAAAEAAAAAAAAAAAAAAAxPj/AA2UGAD///8Aj4d+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABEREREREREREAAAAAAAAAARAABEREREURAAAAAAAAABEQDMAEREREURAAAAAAAAARAMzMwEREREUQAAAAAAAAEQDMzMBERERFEAAAAAAAARAADMwERERERFAQAAAAAAEREQAMBERERERQEAAAAAABERERAFBQUFBQUBAAAAAAAREREQAERQRFBFAQAAAMwAAAAREAREREREUQEAAADMzADMAAABBQUFBFARAAAAzMzMzMwEBFBEUEUREQAAAMzMzMzMBEREREURERAAAADMzMzMzMAREREREREQAAAAzMzMzMzMwAERERERAAAAAMzMzMzMzMzBEQzNEAAAAADMzMzMzMzMEREMDRAAAAAAzMzMzMzMwRERDM0QAAAAAMzMzMzMzBEQARERAAAAAADMzMzMzMABAIgREQAAAAAAzMzMzMwAiAiAgRAAAAAAAMzMzMzBAAiIiIEAAAAAAADMzMzMAQAAiIABAAAAAAAAzMzMwBEQAAgAERAAAAAAAMzMzAAREAAIABEQAAAAAADMzMAAERAAAAAREAAAAAAAzMwAABEQAAAAERAAAAAAAMzAAAABAAAAAAEAAAAAAADMAAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AAB//gAAP/4AAD/8AAAf/AAAH/wAAA/4AAAH+AAAB/gAAAcYAAAHAAAABwAAAAcAAAAHAAAADwAAAA8AAAAfAAAAPwAAAD8AAAA/AAAAfwAAAH8AAAD/AAAA/wAEAf8AAiD/AIIg/wGDYP8Dg+D/B8fx/w/v+/8f////P////w=='), auto;
 }
 
-
 header{
-    background-color: #0c2d3da9;
-    flex: 100%
+    width: 99.25vw;
+    height: 90px;
+    top: 0;
+    left: 0;
+    background-color: #0b354bec;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    color: whitesmoke;
+    box-shadow: 18px;
 }
+header a{
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+header a:visited{
+    text-decoration: none;
+}
+
+a:hover{
+    color: #ffd092;
+}
+
+#up-media{
+    width: fit-content;
+    height: fit-content;
+}
+
+#up-media i{
+    margin-right: 5px;
+    font-size: 20px;
+}
+
 .social-media{
     width: 20px;
     display: flex;
     flex: wrap;
 }
 
-#up-media{
-    position: absolute;
-    top: 3%;
-    right: 5%;
-}
-
-#up-media img{
-    width: 20px;
-    height: 20px;
-    margin-right: 5px;
-}
-
-#ghibli-logo{
-    width: 200px;
-    display: block;
-    margin: auto;
+#headerlogo{
+    width: 150px;
 }
 
 
@@ -65,12 +83,25 @@ footer{
     align-content: center;
     background-color: #0a2431de;
     text-align: center;
+    height: 100px;
     color: whitesmoke;
 }
 
-footer img{
-    width: 20px;
-    height: 20px;
+footer a{
+    text-decoration: none;
+    color: rgb(81, 147, 167);
+}
+
+footer a i{
+    font-size: 20px;
+    margin: 3px;
+}
+
+footer #ghibli-logo{
+    position: relative;
+    top: 38px;
+    width: 100px;
+    height: 120px;
 }
 
 footer div{
@@ -80,8 +111,8 @@ footer div{
 footer p{
     height: auto;
     flex: 100%;
-}
 
+}
 
 /*MEDIA QUERIES*/
 

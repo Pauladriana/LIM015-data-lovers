@@ -1,7 +1,6 @@
 
 export const filterByDirector = (arraytoFilter, filterValue) => {
-  const filterResult = arraytoFilter.filter((film) => film.director === filterValue);
-  return filterResult;
+  return arraytoFilter.filter((film) => film.director === filterValue);
 };
 
 export const filterByProducer = (arraytoFilter, filterValue) => {

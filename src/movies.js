@@ -1,22 +1,30 @@
 import {charactersSum, malesSum, femalesSum, unknowSum} from '../src/data.js';
 
-let dataContenedora = JSON.parse(localStorage.getItem("identificador"));
+const dataContenedora = JSON.parse(localStorage.getItem("identificador"));
 //console.log (dataContenedora);
 
 //linkea titulo de mi html a mi js';
-let titulo = document.getElementById("title");
-let imgPortada = document.getElementById("imgFilms");
-let descriptionPortada = document.getElementById( "descriptionFilms");
+const titulo = document.getElementById("title");
+const imgPortada = document.getElementById("imgFilms");
+const descriptionPortada = document.getElementById( "descriptionFilms");
+const filmDirector = document.getElementById("filmDirector");
+const filmProducer = document.getElementById("filmProducer");
+const filmYear = document.getElementById("filmyear");
+const filmScore = document.getElementById("filmScore");
 
 //MOSTAR TRAILER
-let trailer = document.getElementById('player');
+const trailer = document.getElementById('player');
 trailer.innerHTML = dataContenedora.youTube;
 
 //linkea todo el html  y lo trae al Js';
 titulo.innerHTML = dataContenedora.title;
 imgPortada.setAttribute("src", dataContenedora.poster);
 descriptionPortada.innerHTML = dataContenedora.description;
-console.log(dataContenedora.youTube);
+filmDirector.innerHTML= dataContenedora.director;
+filmProducer.innerHTML = dataContenedora.producer;
+filmYear.innerHTML= dataContenedora.release_date;
+filmScore.innerHTML = dataContenedora.rt_score;
+//console.log(dataContenedora.youTube);
 
 //CALCULO DE PERSONAJES
 const allCharacters = dataContenedora.people;
@@ -28,14 +36,14 @@ document.getElementById("numunknow").innerHTML = unknowSum(allCharacters);
 //imprimiendo people personajes
 dataContenedora.people.map(ele => {
     // CREACION de ETIQUETAS DE HTML
-    let newCharacterCardMovie = document.createElement("div");
+    const newCharacterCardMovie = document.createElement("div");
     newCharacterCardMovie.setAttribute("class","containerPeople");
-    let newCntImg = document.createElement("div");
+    const newCntImg = document.createElement("div");
     newCntImg.setAttribute('class', 'cntImageCharacter');
-    let newCharacterImgMovie = document.createElement("img");
+    const newCharacterImgMovie = document.createElement("img");
     newCharacterImgMovie.setAttribute("src", ele.img);
     newCharacterImgMovie.setAttribute('class', 'characterImg');
-    let titleOfImg = document.createElement("label");
+    const titleOfImg = document.createElement("label");
     titleOfImg.setAttribute('class', 'descriptionImg');
     titleOfImg.innerHTML = ele.name;
 
@@ -46,21 +54,21 @@ dataContenedora.people.map(ele => {
     newCharacterCardMovie.appendChild(titleOfImg);
 
     // UNIENDOLO CON EL DOM
-    let newMovieCont = document.getElementById("contenedorPadrePeople");
+    const newMovieCont = document.getElementById("contenedorPadrePeople");
     newMovieCont.appendChild(newCharacterCardMovie);
 })
 
 //LOCACIONES
 dataContenedora.locations.map(ele => {
     // CREACION de ETIQUETAS DE HTML
-    let newLocationCardMovie = document.createElement("div");
+    const newLocationCardMovie = document.createElement("div");
     newLocationCardMovie.setAttribute("class","containerLocation");
-    let newCntImg = document.createElement("div");
+    const newCntImg = document.createElement("div");
     newCntImg.setAttribute('class', 'cntImageLocation');
-    let newLocationImgMovie = document.createElement("img");
+    const newLocationImgMovie = document.createElement("img");
     newLocationImgMovie.setAttribute("src", ele.img);
     newLocationImgMovie.setAttribute('class', 'locationImg');
-    let titleOfImg = document.createElement("label");
+    const titleOfImg = document.createElement("label");
     titleOfImg.setAttribute('class', 'descriptionImg');
     titleOfImg.innerHTML = ele.name;
 
@@ -71,7 +79,7 @@ dataContenedora.locations.map(ele => {
     newLocationCardMovie.appendChild(titleOfImg);
 
     // UNIENDOLO CON EL DOM
-    let newMovieCont = document.getElementsByClassName("containerAllLocation")[0];
+    const newMovieCont = document.getElementsByClassName("containerAllLocation")[0];
     newMovieCont.appendChild(newLocationCardMovie);
     if (newLocationCardMovie) {
         document.getElementById("location").style.display = "block";
@@ -81,14 +89,14 @@ dataContenedora.locations.map(ele => {
 //VEHICULOS
 dataContenedora.vehicles.map(ele => {
     // CREACION de ETIQUETAS DE HTML
-    let newVehicleCardMovie = document.createElement("div");
+    const newVehicleCardMovie = document.createElement("div");
     newVehicleCardMovie.setAttribute("class","containerVehicles");
-    let newCntImg = document.createElement("div");
+    const newCntImg = document.createElement("div");
     newCntImg.setAttribute('class', 'cntImageVehicle');
-    let newVehicleImgMovie = document.createElement("img");
+    const newVehicleImgMovie = document.createElement("img");
     newVehicleImgMovie.setAttribute("src", ele.img);
     newVehicleImgMovie.setAttribute('class', 'vehicleImg');
-    let titleOfImg = document.createElement("label");
+    const titleOfImg = document.createElement("label");
     titleOfImg.setAttribute('class', 'descriptionImg');
     titleOfImg.innerHTML = ele.name;
 
@@ -99,7 +107,7 @@ dataContenedora.vehicles.map(ele => {
     newVehicleCardMovie.appendChild(titleOfImg);
 
     // UNIENDOLO CON EL DOM
-    let newMovieCont = document.getElementsByClassName("containerAllVehicles")[0];
+    const newMovieCont = document.getElementsByClassName("containerAllVehicles")[0];
     newMovieCont.appendChild(newVehicleCardMovie);
     if (newVehicleCardMovie) {
         document.getElementById("vehicles").style.display = "block";
