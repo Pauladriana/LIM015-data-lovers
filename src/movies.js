@@ -12,6 +12,7 @@ const filmProducer = document.getElementById("filmProducer");
 const filmYear = document.getElementById("filmyear");
 const filmScore = document.getElementById("filmScore");
 
+
 //MOSTAR TRAILER
 const trailer = document.getElementById('player');
 trailer.innerHTML = dataContenedora.youTube;
@@ -120,6 +121,3 @@ const ghibliLogo = document.querySelector("#ghibli-logo");
 ghibliLogo.addEventListener("click", function(){
     window.open("index.html", "_self")
 })
-
-//VIDEO DE PELICULAS
-

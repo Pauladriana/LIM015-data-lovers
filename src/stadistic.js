@@ -1,5 +1,5 @@
-/*import data from './data/ghibli/ghibli.js';
-// import data from './data/rickandmorty/rickandmorty.js';
+import data from './data/ghibli/ghibli.js';
+//import data from './data/rickandmorty/rickandmorty.js';
 
 
 //DATA ALMACENADA EN UNA SOLA VARIABLE
@@ -59,4 +59,4 @@ function rendertCharts(){
     const ctx = document.querySelector("#chart").getContext("2d");
     totalCaseCharts(ctx)
 }
-rendertCharts()*/
+rendertCharts()

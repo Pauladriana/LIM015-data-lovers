@@ -211,6 +211,12 @@ footer p{
     border: 5px solid #d8d8d8;
 }
 
+.containerLocation:hover,
+.containerVehicles:hover,
+.containerPeople:hover{
+    background-color:rgba(203, 206, 207, 0.42);;
+}
+
 .containerLocation img,
 .containerVehicles img,
 .containerPeople img {
