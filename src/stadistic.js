@@ -1,12 +1,13 @@
-/*import data from './data/ghibli/ghibli.js';
+import data from './data/ghibli/ghibli.js';
 // import data from './data/rickandmorty/rickandmorty.js';
 
 
 //DATA ALMACENADA EN UNA SOLA VARIABLE
 let films = data.films;
 
-//DATA DE DIRECTORES 
+//DATA DE DIRECTORES
 let filmDire = films.map((film) => film.director);
+/* eslint-disable */
 
 //DATA DE DIRECTORES ALMACENANDO SUS VALORES UNICOS 
 let uniqueDirector = [...new Set(filmDire)];
@@ -59,4 +60,4 @@ function rendertCharts(){
     const ctx = document.querySelector("#chart").getContext("2d");
     totalCaseCharts(ctx)
 }
-rendertCharts()*/
+rendertCharts()
