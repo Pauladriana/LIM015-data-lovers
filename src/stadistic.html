@@ -1,138 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="stadistic.css" />
-    <script src="https://kit.fontawesome.com/3311e3ac16.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins&display=swap" rel="stylesheet">
-</head>
-  <body>
-    <header>
-      <a href="index.html#moviesSection">Movies</a>
-      <a href="index.html#aboutGhibli">About</a>
-      <img src="\src\multimedia\ghiblilogo2.svg" alt="" id="headerlogo">
-      <a href="stadistic.html">Statistics</a>
-      <div class="social-media" id="up-media">
-        <a href="#">
-					<i class="fab fa-facebook"></i>
-				</a>
-				<a href="#">
-					<i class="fab fa-instagram"></i>
-				</a>
-				<a href="#">
-				<i class="fab fa-twitter"></i>
-				</a>
-      </div>
-    </header>
 
-    <main>
-      <div>
-    <canvas id="chart" class="chart" width="800" height="400"></canvas>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Lovers</title>
+  <link rel="stylesheet" href="stadistic.css" />
+  <script src="https://kit.fontawesome.com/3311e3ac16.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <a href="index.html#moviesSection">Movies</a>
+    <a href="index.html#aboutGhibli">About</a>
+    <img src="\src\multimedia\ghiblilogo2.svg" alt="" id="headerlogo">
+    <a href="stadistic.html">Statistics</a>
+    <div class="social-media" id="up-media">
+      <a href="#">
+        <i class="fab fa-facebook"></i>
+      </a>
+      <a href="#">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="#">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </div>
+  </header>
+<div class="sectionChart">
+  <div class="chartFather">
+    <canvas id="chart" class="chart"></canvas>
+  </div>
+</div>
+  <section>
+    <div class="peliculas-recomendadas contenedor">
+      <div class="contenedor-titulo-controles">
+        <h3>Películas Recomendadas</h3>
+        <div class="indicadores"></div>
       </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
-    <script type="module"></script>
-    </main>
-    <section>
-      <div class="peliculas-recomendadas contenedor">
-        <div class="contenedor-titulo-controles">
-          <h3>Películas Recomendadas</h3>
-          <div class="indicadores"></div>
-        </div>
-  
-        <div class="contenedor-principal">
-          <button role="button" id="flecha-izquierda" class="flecha-izquierda"><i class="fas fa-angle-left"></i></button>
-  
-          <div class="contenedor-carousel">
-            <div class="carousel">
-              <div class="pelicula">
-                <a href="#"><img src="imagenes/UNO.jpg" alt=""></a>
-              </div>
-              <div class="pelicula">
-                <a href="#"><img src="imagenes/DOS.jpg" alt=""></a>
-              </div>
-              <div class="pelicula">
-                <a href="#"><img src="imagenes/TRES.jpg" alt=""></a>
-              </div>
-              <div class="pelicula">
-                <a href="#"><img src="imagenes/CUATRO.jpg" alt=""></a>
-              </div>
-              <div class="pelicula">
-                <a href="#"><img src="imagenes/CINCO.jpg" alt=""></a>
-              </div>
-              <div class="pelicula">
-                <a href="#"><img src="imagenes/SEIS.jpg" alt=""></a>
-              </div>
-              <div class="pelicula">
-                <a href="#"><img src="imagenes/SIETE.jpg" alt=""></a>
-              </div>
-              <div class="pelicula">
-                <a href="#"><img src="imagenes/OCHO.jpg" alt=""></a>
-              </div>
-              <div class="pelicula">
-                <a href="#"><img src="imagenes/NUEVE.jpg" alt=""></a>
-              </div>
-              <div class="pelicula">
-                <a href="#"><img src="imagenes/DIEZ.jpg" alt=""></a>
-              </div>
-              <div class="pelicula">
-                <a href="#"><img src="imagenes/UNO.jpg" alt=""></a>
-              </div>
-              <div class="pelicula">
-                <a href="#"><img src="imagenes/DOS.jpg" alt=""></a>
-              </div>
-              <div class="pelicula">
-                <a href="#"><img src="imagenes/TRES.jpg" alt=""></a>
-              </div>
-              <div class="pelicula">
-                <a href="#"><img src="imagenes/CUATRO.jpg" alt=""></a>
-              </div>
-              <div class="pelicula">
-                <a href="#"><img src="imagenes/CINCO.jpg" alt=""></a>
-              </div>
-              <div class="pelicula">
-                <a href="#"><img src="imagenes/SEIS.jpg" alt=""></a>
-              </div>
-              <div class="pelicula">
-                <a href="#"><img src="imagenes/SIETE.jpg" alt=""></a>
-              </div>
-              <div class="pelicula">
-                <a href="#"><img src="imagenes/OCHO.jpg" alt=""></a>
-              </div>
-              <div class="pelicula">
-                <a href="#"><img src="imagenes/NUEVE.jpg" alt=""></a>
-              </div>
-              <div class="pelicula">
-                <a href="#"><img src="imagenes/DIEZ.jpg" alt=""></a>
-              </div>
+
+      <div class="contenedor-principal">
+        <button role="button" id="flecha-izquierda" class="flecha-izquierda"><i class="fas fa-angle-left"></i></button>
+
+        <div class="contenedor-carousel">
+          <div class="carousel">
+            <div class="pelicula">
+              <a href="#"><img src="imagenes/UNO.jpg" alt=""></a>
+            </div>
+            <div class="pelicula">
+              <a href="#"><img src="imagenes/DOS.jpg" alt=""></a>
+            </div>
+            <div class="pelicula">
+              <a href="#"><img src="imagenes/TRES.jpg" alt=""></a>
+            </div>
+            <div class="pelicula">
+              <a href="#"><img src="imagenes/CUATRO.jpg" alt=""></a>
+            </div>
+            <div class="pelicula">
+              <a href="#"><img src="imagenes/CINCO.jpg" alt=""></a>
+            </div>
+            <div class="pelicula">
+              <a href="#"><img src="imagenes/SEIS.jpg" alt=""></a>
+            </div>
+            <div class="pelicula">
+              <a href="#"><img src="imagenes/SIETE.jpg" alt=""></a>
+            </div>
+            <div class="pelicula">
+              <a href="#"><img src="imagenes/OCHO.jpg" alt=""></a>
+            </div>
+            <div class="pelicula">
+              <a href="#"><img src="imagenes/NUEVE.jpg" alt=""></a>
+            </div>
+            <div class="pelicula">
+              <a href="#"><img src="imagenes/DIEZ.jpg" alt=""></a>
+            </div>
+            <div class="pelicula">
+              <a href="#"><img src="imagenes/UNO.jpg" alt=""></a>
+            </div>
+            <div class="pelicula">
+              <a href="#"><img src="imagenes/DOS.jpg" alt=""></a>
+            </div>
+            <div class="pelicula">
+              <a href="#"><img src="imagenes/TRES.jpg" alt=""></a>
+            </div>
+            <div class="pelicula">
+              <a href="#"><img src="imagenes/CUATRO.jpg" alt=""></a>
+            </div>
+            <div class="pelicula">
+              <a href="#"><img src="imagenes/CINCO.jpg" alt=""></a>
+            </div>
+            <div class="pelicula">
+              <a href="#"><img src="imagenes/SEIS.jpg" alt=""></a>
+            </div>
+            <div class="pelicula">
+              <a href="#"><img src="imagenes/SIETE.jpg" alt=""></a>
+            </div>
+            <div class="pelicula">
+              <a href="#"><img src="imagenes/OCHO.jpg" alt=""></a>
+            </div>
+            <div class="pelicula">
+              <a href="#"><img src="imagenes/NUEVE.jpg" alt=""></a>
+            </div>
+            <div class="pelicula">
+              <a href="#"><img src="imagenes/DIEZ.jpg" alt=""></a>
             </div>
           </div>
-  
-          <button role="button" id="flecha-derecha" class="flecha-derecha"><i class="fas fa-angle-right"></i></button>
         </div>
-      </div>
-    </section>
 
-
-    <footer>
-      <p>For more information, please visit:</p>
-      <br>
-      <div>
-        <a href="#">
-					<i class="fab fa-facebook"></i>
-				</a>
-				<a href="#">
-					<i class="fab fa-instagram"></i>
-				</a>
-				<a href="#">
-				<i class="fab fa-twitter"></i>
-				</a>
+        <button role="button" id="flecha-derecha" class="flecha-derecha"><i class="fas fa-angle-right"></i></button>
       </div>
-    </footer>
-    <script src="stadistic.js" type="module"></script>
-  </body>
+    </div>
+  </section>
+  <footer>
+    <p>For more information, please visit:</p>
+    <br>
+    <div>
+      <a href="#">
+        <i class="fab fa-facebook"></i>
+      </a>
+      <a href="#">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="#">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+  <script type="module"></script>
+  <script src="stadistic.js" type="module"></script>
+</body>
+
 </html>

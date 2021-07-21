@@ -8,37 +8,37 @@ export const filterByProducer = (arraytoFilter, filterValue) => {
   return filterResult;
 };
 
-function compareStrings(a, b) {
+export function compareStrings(a, b) {
   a = a.toLowerCase();
   b = b.toLowerCase();
 
   return (a < b) ? -1 : (a > b) ? 1 : 0;
 }
 
-function compareRade(a, b) {
+export function compareRade(a, b) {
   return (a < b) ? -1 : (a > b) ? 1 : 0;
 }
 
 export const ordenAlfaAtoZ = (arraytosort) => {
-  arraytosort.sort(function(a, b) {
+  return arraytosort.sort(function(a, b) {
     return compareStrings(a.title, b.title);
-})
+  });
 };
 
 export const ordenAlfaZtoA = (arraytosort) => {
-  arraytosort.sort(function(a, b) {
+  return arraytosort.sort(function(a, b) {
     return compareStrings(b.title, a.title);
 })
 };
 
 export const yearMovie = (arraytosort) => {
-  arraytosort.sort(function(a, b) {
+  return arraytosort.sort(function(a, b) {
     return compareStrings(a.release_date, b.release_date);
 })
 };
 
 export const scoreMovie = (arraytosort) => {
-  arraytosort.sort(function(a, b) {
+  return arraytosort.sort(function(a, b) {
     return compareRade(Number(b.rt_score), Number(a.rt_score));
 });
 };

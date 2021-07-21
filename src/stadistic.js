@@ -49,7 +49,7 @@ function totalCaseCharts(ctx){
             datasets: [
                 {
                     label: 'Director con la pelicula mejor botada',
-                    backgroundColor:'red',
+                    backgroundColor:'rgb(108, 233, 255)',
                     data: filmScore,
                 }
             ]
