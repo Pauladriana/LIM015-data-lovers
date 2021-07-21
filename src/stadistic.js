@@ -1,12 +1,13 @@
 import data from './data/ghibli/ghibli.js';
-//import data from './data/rickandmorty/rickandmorty.js';
+// import data from './data/rickandmorty/rickandmorty.js';
 
 
 //DATA ALMACENADA EN UNA SOLA VARIABLE
 let films = data.films;
 
-//DATA DE DIRECTORES 
+//DATA DE DIRECTORES
 let filmDire = films.map((film) => film.director);
+/* eslint-disable */
 
 /* eslint-disable */
 

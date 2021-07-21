@@ -54,7 +54,7 @@ export const charactersSum = (allCharacters) => {
 export const malesSum = (allCharacters) => {
   let sumOfCharacters = 0;
   for (let i=0; i < allCharacters.length; i++) {
-    if (allCharacters[i].gender == "Male") {
+    if (allCharacters[i].gender === "Male") {
       sumOfCharacters += 1;
     }
   }
@@ -64,7 +64,7 @@ export const malesSum = (allCharacters) => {
 export const femalesSum = (allCharacters) => {
   let sumOfCharacters = 0;
   for (let i=0; i < allCharacters.length; i++) {
-    if (allCharacters[i].gender == "Female" ) {
+    if (allCharacters[i].gender === "Female" ) {
       sumOfCharacters += 1;
     }
 }
