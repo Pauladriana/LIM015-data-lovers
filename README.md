@@ -100,22 +100,25 @@ IDENTIFICANDO A NUESTROS USUARIOS:
 
 Acontinuacion presentamos las historias de usuario:
 
-1)Historia de Usuario 1:Yo como fan de Studio Ghibli, quiero una pagina web, donde pueda ver cuales son las peliculas de Studio Ghibli.
+1)Historia de Usuario 1: Yo como fan de Studio Ghibli, quiero una pagina web, donde pueda ver cuales son las peliculas de Studio Ghibli.
 
-2)Historia de Usuario 2:Yo como usuaria de la web de Ghibli, quiero saber más detalles sobre las películas de Ghibli, donde pueda ver descripción, los personajes, las locaciones y vehiculos de cada pelicula.
+2)Historia de Usuario 2: Yo como usuaria de la web de Ghibli, quiero saber más detalles sobre las películas de Ghibli, donde pueda ver descripción, los personajes, las locaciones y vehiculos de cada pelicula.
 
-3)Historia de Usuario 3:Yo como usuaria de la web de Ghibli,quiero filtrar las películas Ghibli, donde pueda ver las peliculas de acuerdo a su productor y/o director.
+3)Historia de Usuario 3: Yo como usuaria de la web de Ghibli,quiero filtrar las películas Ghibli, donde pueda ver las peliculas de acuerdo a su productor y/o director.
 
-4)Historia de Usuario 4:Yo como usuaria de la web de Ghibli, quiero ordenar las películas Ghibli, donde pueda ordenar las películas alfabéticamente, por año y por puntaje.
+4)Historia de Usuario 4: Yo como usuaria de la web de Ghibli, quiero ordenar las películas Ghibli, donde pueda ordenar las películas alfabéticamente, por año y por puntaje.
 
-5)Historia de Usuario 5:Yo como usuaria de la web de Ghibli, quiero buscar la  información de las películas Ghibli, donde pueda ver un buscador y pueda colocar el nombre de la películas y así ver los personajes, las locaciones y vehículos de cada película sin necesidad de explorar toda la web.
+5)Historia de Usuario 5: Yo como usuaria de la web de Ghibli, quiero buscar la  información de las películas Ghibli, donde pueda ver un buscador y pueda colocar el nombre de la películas y así ver los personajes, las locaciones y vehículos de cada película sin necesidad de explorar toda la web.
 
-6)Historia de Usuario 6:Yo como usuaria de la web de Ghibli, quiero saber mas detalles de los personajes de ghibli, donde pueda ver el total de género en cada película.
+6)Historia de Usuario 6: Yo como usuaria de la web de Ghibli, quiero saber mas detalles de los personajes de ghibli, donde pueda ver el total de género en cada película.
 
-7)Historia de Usuario 7:Yo como usuaria de la web de Ghibli, quiero ver estadísticas de directores, donde pueda saber de todos los directores , su mejor película votada y por ende quien tiene las mejores películas.
+7)Historia de Usuario 7: Yo como usuaria de la web de Ghibli, quiero ver estadísticas de directores, donde pueda saber de todos los directores , su mejor película votada y por ende quien tiene las mejores películas.
 ### Diseño de la Interfaz de Usuario
 
 #### Prototipo de baja fidelidad
+![prototipoinicial](https://user-images.githubusercontent.com/85115054/126575854-4df295bb-28b2-4327-9a66-763712800bb7.JPG)
+
+
 
 Durante tu trabajo deberás haber hecho e iterado bocetos (_sketches_) de tu
 solución usando papel y lápiz. Te recomendamos tomar fotos de todas las
