@@ -9,6 +9,8 @@ let films = data.films;
 let filmDire = films.map((film) => film.director);
 /* eslint-disable */
 
+/* eslint-disable */
+
 //DATA DE DIRECTORES ALMACENANDO SUS VALORES UNICOS 
 let uniqueDirector = [...new Set(filmDire)];
 
@@ -47,7 +49,7 @@ function totalCaseCharts(ctx){
             datasets: [
                 {
                     label: 'Director con la pelicula mejor botada',
-                    borderColor:'red',
+                    backgroundColor:'rgb(108, 233, 255)',
                     data: filmScore,
                 }
             ]
