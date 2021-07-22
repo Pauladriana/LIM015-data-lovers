@@ -51,15 +51,24 @@ function totalCaseCharts(ctx){
                     label: 'Director con la pelicula mejor botada',
                     backgroundColor:'rgb(108, 233, 255)',
                     data: filmScore,
+                    barThickness: 80
                 }
             ]
-        }    
+        },
+        options: {
+            layout: {
+                padding: 20
+            }
+        }  
     })
 }
 
 
 function rendertCharts(){
     const ctx = document.querySelector("#chart").getContext("2d");
-    totalCaseCharts(ctx)
+    totalCaseCharts(ctx);
+    Chart.defaults.global.defaultFontFamily = "Lato";
+Chart.defaults.global.defaultFontSize = 20;
+Chart.defaults.global.defaultFontColor = 'blue';
 }
 rendertCharts()
