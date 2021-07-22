@@ -129,10 +129,24 @@ describe('compareStrings', () => {
   it('it should retun -1', () => {
     expect(compareStrings('a','b')).toBe(-1);
   }); 
+  it('it should retun 1', () => {
+    expect(compareStrings('b','a')).toBe(1);
+  }); 
+  it('it should retun 0', () => {
+    expect(compareStrings('b','b')).toBe(0);
+  }); 
 });
-
 describe('compareRade', () => {
     it('is a function', () => {
       expect(typeof compareRade).toBe('function');
     });
-});
+    it('it should retun -1', () => {
+      expect(compareRade(50,100)).toBe(-1);
+    }); 
+    it('it should retun 1', () => {
+      expect(compareRade(100,50)).toBe(1);
+    }); 
+    it('it should retun 0', () => {
+      expect(compareRade(50,50)).toBe(0);
+    }); 
+}); 
