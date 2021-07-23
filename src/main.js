@@ -206,13 +206,20 @@ producerNishimura.addEventListener("click", function() {
 });
 
 //HACER CLICK EN CABECERA PARA QUE ME MUESTRE TODAS LAS PELICULAS
+const headerLogo = document.querySelector("#headerlogo");
+headerLogo.addEventListener("click", function(){
+    document.getElementsByClassName("cardscontainer")[0].innerHTML = "";
+    colorFilter();
+    allMovies();
+    document.querySelector("#search-input").value = ""
+})
+
 const unfilter = document.querySelector("#unfilterbox");
 unfilter.addEventListener("click", function(){
     document.getElementsByClassName("cardscontainer")[0].innerHTML = "";
     colorFilter();
     allMovies();
     document.querySelector("#search-input").value = ""
-
 })
 
 //BUSCAR PELICULA

@@ -43,6 +43,7 @@ h1{
     padding: 25px;
     background-color: #0b354bec;
     border-radius: 15px;
+    margin-left: 3%;
 }
 
 .imgFilms{
@@ -258,7 +259,72 @@ footer p{
 
 /*MEDIA QUERIES*/
 
-@media screen and (max-width: 839px) {
+@media screen and (max-width: 500px) {
+
+  body{
+    background-color:#45b8db;
+  }
+  header a{
+    display: none;
+  }
+  #up-media{
+      display: none;
+  }
+  .title{
+    padding: 3% 8% 3% 8%;
+  }
+  .containerPosterFilms {
+    display: block;
+    padding: 5%;
+  }
+  #posterFilms{
+    display: block;
+    width: fit-content;
+    margin: auto;
+  }
+
+  #textFilms{
+    display: block;
+    margin: auto;
+    margin-top: 5%;
+    padding: 5%;
+  }
+  .player{
+    width: 90%;
+    height: 320px;
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 800px) {
+
+  body{
+    background-color:#45b8db;
+  }
+  #up-media{
+    display: none;
+  }
+  .containerPosterFilms {
+    display: block;
+    padding: 5%;
+  }
+  #posterFilms{
+    display: block;
+    width: fit-content;
+    margin: auto;
+  }
+
+  #textFilms{
+    display: block;
+    margin: auto;
+    margin-top: 5%;
+    padding: 5%;
+  }
+  .player{
+    width: 90%;
+    height: 320px;
+  }
+}
+
+@media screen and (min-width: 801px) and (max-width: 840px) {
 
     #up-media{
         right: 15%;
@@ -270,10 +336,6 @@ footer p{
     .title {
         font-size: 42px;
     }
-
-}
-
-@media screen and (max-width: 840px) {
     .containerPosterFilms p,
     .containerPosterFilms img{
     flex: 100%;
