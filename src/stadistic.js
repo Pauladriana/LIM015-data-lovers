@@ -49,26 +49,41 @@ console.log(filmScore);
 console.log(recomendedFilms);
 
 //DIAGRAMA DE FLUJO
-function totalCaseCharts(ctx) {
-  const charts = new Chart(ctx, {
-    type: "bar",
-    data: {
-      labels: uniqueDirector,
-      datasets: [
-        {
-          label: "Director con la pelicula mejor botada",
-          backgroundColor: "rgb(108, 233, 255)",
-          data: filmScore,
-          barThickness: 80,
-        },
-      ],
-    },
-    options: {
-      layout: {
-        padding: 20,
+function totalCaseCharts(ctx){
+  const charts = new Chart(ctx,{
+      type:"bar",
+      data:{
+          labels: uniqueDirector,
+          datasets: [
+              {
+                  label: 'Director con la pelicula mejor botada',
+                  backgroundColor:'rgb(108, 233, 255)',
+                  data: filmScore,
+                  barThickness: 35,
+              }
+          ]
       },
-    },
-  });
+      options: {
+          maintainAspectRatio: false,
+          scales: {
+              yAxes: [{
+              stacked: true,
+              gridLines: {
+              display: true,
+              color: "rgba(255,99,132,0.2)"
+              }
+          }],
+          xAxes: [{
+              gridLines: {
+              display: false
+              }
+          }]
+          },
+          layout: {
+              padding: 20,
+          }
+      }  
+  })
 }
 
 function rendertCharts() {
@@ -117,7 +132,6 @@ for(let i = 0; i < numeroPaginas; i++){
 		document.querySelector('.indicadores .activo').classList.remove('activo');
 		e.target.classList.add('activo');
 	});
-}
 
 //HOVER CAROUSEL 
 peliculas.forEach((pelicula) => {
@@ -159,3 +173,12 @@ function movieCards () {
     }
 }
 movieCards();
+//FIN CAROUSEL
+
+
+//REGRESAR A PAGINA PRINCIPAL
+const headerLogo = document.querySelector("#headerlogo");
+headerLogo.addEventListener("click", function(){
+      window.open("index.html", "_self")
+  })
+}
