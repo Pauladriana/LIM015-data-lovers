@@ -35,38 +35,44 @@
   <div class="tittleTable">
     <h1 style="color: white;">Mejores películas por director</h1>
     <div class="parrafo">
-    <p>En siguiente cuadro se puede observar que la película con mayor puntaje la cual lo obtuvo el director Isao Takahata con un 100% siendo el porcentaje más alto , seguido de otros directores como el director Hayap Miyazaki con un 97% y a Hiromasa Yonebayashi con un 95%, por ultimo están aquellos otros directores con porcentajes de puntuación más bajos.</p>
+    <p>En el siguiente cuadro se puede observar que la película con mayor puntaje lo obtuvo el director Isao Takahata con la pelicula "Only Yesterday" con una puntuacion de 100, alcanzando la puntuacion mas alta, seguido de otros directores como el director Hayap Miyazaki con "Spirited Away" con 97 puntos y a Hiromasa Yonebayashi con "The Secret World of Arrietty"con 95 puntos, por ultimo están aquellos otros directores con una puntuación más baja en sus Peliculas.</p>
   </div>
   </div>
   <div class="tablePeliculas">
     <table>
       <tr>
-    
-    <th style="background-color: rgba(145, 198, 223, 0.096); color: rgb(168, 160, 160);">DIRECTORES STUDIO GHIBLI </th>
-        <th style="background-color: rgba(145, 198, 223, 0.096); color: rgb(168, 160, 160);">PUNTAJE PELÍCULA</th>
+        <th style="background-color: rgba(145, 198, 223, 0.096); color: rgb(168, 160, 160);">DIRECTORES STUDIO GHIBLI </th>
+        <th style="background-color: rgba(145, 198, 223, 0.096); color: rgb(168, 160, 160);">PELICULAS</th>
+        <th style="background-color: rgba(145, 198, 223, 0.096); color: rgb(168, 160, 160);">PUNTAJE</th>
       </tr>
       <tr>
         <td style="background-color: rgba(119, 219, 250, 0.42)"><b>Isao Takahata </b></td>
+        <td style="background-color: rgba(119, 219, 250, 0.42)"><b>Only Yesterday</b></td>
         <td style="background-color: rgba(119, 219, 250, 0.42)"><b>100</b></td>
       </tr>
       <tr>
         <td style="background-color: rgba(119, 219, 250, 0.42)"><b>Hayao Miyazaki </b></td>
+        <td style="background-color: rgba(119, 219, 250, 0.42)"><b>Spirited Away</b></td>
         <td style="background-color: rgba(119, 219, 250, 0.42)"><b>97</b></td>
       </tr>
       <tr>
         <td style="background-color: rgba(119, 219, 250, 0.42)"><b>Hiromasa Yonebayashi </b></td>
+        <td style="background-color: rgba(119, 219, 250, 0.42)"><b>The Secret World of Arrietty</b></td>
         <td style="background-color: rgba(119, 219, 250, 0.42)"><b>95</b></td>
       </tr>
       <tr>
         <td style="background-color: rgba(119, 219, 250, 0.42)"><b>Yoshifuni Kondo </b></td>
+        <td style="background-color: rgba(119, 219, 250, 0.42)"><b>Whisper of the Heart</b></td>
         <td style="background-color: rgba(119, 219, 250, 0.42)"><b>91</b></td>
       </tr>
       <tr>
         <td style="background-color: rgba(119, 219, 250, 0.42)"><b>Hiroyuki Morita </b></td>
+        <td style="background-color: rgba(119, 219, 250, 0.42)"><b>The Cat Returns</b></td>
         <td style="background-color: rgba(119, 219, 250, 0.42)"><b>89</b></td>
       </tr>
       <tr>
         <td style="background-color: rgba(119, 219, 250, 0.42)"><b>Goro Miyazaki </b></td>
+        <td style="background-color: rgba(119, 219, 250, 0.42)"><b>From Up on Poppy Hill</b></td>
         <td style="background-color: rgba(119, 219, 250, 0.42)"><b>83</b></td>
       </tr>
       
@@ -77,85 +83,43 @@
     <canvas id="chart" class="chart" width="100%"></canvas>
   </div>
 </div>
-  <section>
-    <div class="peliculas-recomendadas contenedor">
-      <div class="contenedor-titulo-controles">
-        <h3>Galeria de Peliculas</h3>
-        <div class="indicadores"></div>
-      </div>
+<section>
+  <div class="peliculas-recomendadas contenedor">
+    <div class="contenedor-titulo-controles">
+      <h3>Peliculas Recomendadas</h3>
+      <div class="indicadores" style="display: none;"></div>
+    </div>
 
-      <div class="contenedor-principal">
-        <button role="button" id="flecha-izquierda" class="flecha-izquierda"><i class="fas fa-angle-left"></i></button>
+    <div class="contenedor-principal">
+      <button role="button" id="flecha-izquierda" class="flecha-izquierda"><i class="fas fa-angle-left"></i></button>
 
-        <div class="contenedor-carousel">
-          <div class="carousel">
-            <div class="pelicula">
-              <a href="#"><img src="imagenes/UNO.jpg" alt=""></a>
-            </div>
-            <div class="pelicula">
-              <a href="#"><img src="imagenes/DOS.jpg" alt=""></a>
-            </div>
-            <div class="pelicula">
-              <a href="#"><img src="imagenes/TRES.jpg" alt=""></a>
-            </div>
-            <div class="pelicula">
-              <a href="#"><img src="imagenes/CUATRO.jpg" alt=""></a>
-            </div>
-            <div class="pelicula">
-              <a href="#"><img src="imagenes/CINCO.jpg" alt=""></a>
-            </div>
-            <div class="pelicula">
-              <a href="#"><img src="imagenes/SEIS.jpg" alt=""></a>
-            </div>
-            <div class="pelicula">
-              <a href="#"><img src="imagenes/SIETE.jpg" alt=""></a>
-            </div>
-            <div class="pelicula">
-              <a href="#"><img src="imagenes/OCHO.jpg" alt=""></a>
-            </div>
-            <div class="pelicula">
-              <a href="#"><img src="imagenes/NUEVE.jpg" alt=""></a>
-            </div>
-            <div class="pelicula">
-              <a href="#"><img src="imagenes/DIEZ.jpg" alt=""></a>
-            </div>
-            <div class="pelicula">
-              <a href="#"><img src="imagenes/UNO.jpg" alt=""></a>
-            </div>
-            <div class="pelicula">
-              <a href="#"><img src="imagenes/DOS.jpg" alt=""></a>
-            </div>
-            <div class="pelicula">
-              <a href="#"><img src="imagenes/TRES.jpg" alt=""></a>
-            </div>
-            <div class="pelicula">
-              <a href="#"><img src="imagenes/CUATRO.jpg" alt=""></a>
-            </div>
-            <div class="pelicula">
-              <a href="#"><img src="imagenes/CINCO.jpg" alt=""></a>
-            </div>
-            <div class="pelicula">
-              <a href="#"><img src="imagenes/SEIS.jpg" alt=""></a>
-            </div>
-            <div class="pelicula">
-              <a href="#"><img src="imagenes/SIETE.jpg" alt=""></a>
-            </div>
-            <div class="pelicula">
-              <a href="#"><img src="imagenes/OCHO.jpg" alt=""></a>
-            </div>
-            <div class="pelicula">
-              <a href="#"><img src="imagenes/NUEVE.jpg" alt=""></a>
-            </div>
-            <div class="pelicula">
-              <a href="#"><img src="imagenes/DIEZ.jpg" alt=""></a>
-            </div>
+      <div class="contenedor-carousel">
+        <div class="carousel">
+          <div class="pelicula">
+            <a href="#"><img src="imagenes/UNO.jpg" alt=""></a>
+          </div>
+          <div class="pelicula">
+            <a href="#"><img src="imagenes/DOS.jpg" alt=""></a>
+          </div>
+          <div class="pelicula">
+            <a href="#"><img src="imagenes/TRES.jpg" alt=""></a>
+          </div>
+          <div class="pelicula">
+            <a href="#"><img src="imagenes/CUATRO.jpg" alt=""></a>
+          </div>
+          <div class="pelicula">
+            <a href="#"><img src="imagenes/CINCO.jpg" alt=""></a>
+          </div>
+          <div class="pelicula">
+            <a href="#"><img src="imagenes/SEIS.jpg" alt=""></a>
           </div>
         </div>
-
-        <button role="button" id="flecha-derecha" class="flecha-derecha"><i class="fas fa-angle-right"></i></button>
       </div>
+
+      <button role="button" id="flecha-derecha" class="flecha-derecha"><i class="fas fa-angle-right"></i></button>
     </div>
-  </section>
+  </div>
+</section>
   <footer>
     <p>For more information, please visit:</p>
     <br>
