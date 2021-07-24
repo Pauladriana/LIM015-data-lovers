@@ -1,5 +1,5 @@
 //IMPORTAMOS LA DATA
-import {charactersSum, malesSum, femalesSum, unknowSum} from '/LIM015-data-lovers/src/data.js';
+import {charactersSum, malesSum, femalesSum, unknowSum} from '../src/data.js';
 const dataContenedora = JSON.parse(localStorage.getItem("identificador"));
 //console.log (dataContenedora);
 
