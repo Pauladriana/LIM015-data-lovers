@@ -1,4 +1,4 @@
-import {charactersSum, malesSum, femalesSum, unknowSum} from '../src/data.js';
+import {charactersSum, malesSum, femalesSum, unknowSum} from './src/data.js';
 
 const dataContenedora = JSON.parse(localStorage.getItem("identificador"));
 //console.log (dataContenedora);
