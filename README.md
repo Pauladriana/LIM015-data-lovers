@@ -14,13 +14,13 @@
 
 ***
 
-## 1. Preámbulo
+## 1. Resumen del proyecto
 
-## 2. Resumen del proyecto
+Nuestro proyecto está dedicado a mostrar data de Studio Ghibli en una plataforma web responsive.
 
-## 3. Objetivos de aprendizaje
+## 2. Objetivos de aprendizaje
 
-El objetivo principal de este proyecto es aprendas a diseñar y construir una
+El objetivo principal de este proyecto es aprender a diseñar y construir una
 interfaz web donde se pueda visualizar y manipular data del Studio Ghibli, entendiendo lo que el
 usuario necesita.
 
@@ -73,30 +73,27 @@ usuario necesita.
 * [X] Crear prototipos para obtener feedback e iterar.
 * [X] Aplicar los principios de diseño visual (contraste, alineación, jerarquía)
 * [X] Planear y ejecutar tests de usabilidad.
-### Definición del producto
-Este trabajo es un platafoma wed responsive que contiene y muestra data de las peliculas de Studio Ghibli
-### Historias de usuario
 
-Una vez que entiendas las necesidades de tus usuarios, escribe las [Historias
-de Usuario](https://es.wikipedia.org/wiki/Historias_de_usuario) que representen
-todo lo que el usuario necesita hacer/ver. Las **Historias de Usuario** deben
-ser el resultado de tu proceso de investigación o _research_ de tus usuarios.
 
-Asegúrate de incluir la definición de terminado (_definition of done_) y los
-Criterios de Aceptación para cada una.
+## 3. Definición del producto
+Este trabajo es un platafoma web responsive que contiene y muestra data de las peliculas de Studio Ghibli.
 
-En la medida de lo posible, termina una historia de usuario antes de pasar
-a la siguiente (Cumple con Definición de Terminado + Criterios de Aceptación).
+## 4. Historias de usuario
 
 IDENTIFICANDO A NUESTROS USUARIOS:
+
 ¿Quiénes son los principales usuarios de producto?
 -Publico en general que disfrute de las peliculas de Ghibli y quiera saber mas.
+
 ¿Cuáles son los objetivos de estos usuarios en relación con el producto?
 -Saber y conocer mas sobre las peliculas del Studio Ghibli
+
 ¿Cuáles son los datos más relevantes que quieren ver en la interfaz y por qué?
 -Desean una pagina web amigable con el usuario donde se muestre películas detallando sus componentes (personajes, directores, locaciones, año, etc)
+
 ¿Cuándo utilizan o utilizarían el producto?
 -En momentos de Ocio.
+
 
 Acontinuacion presentamos las historias de usuario:
 
@@ -113,25 +110,27 @@ Acontinuacion presentamos las historias de usuario:
 6)Historia de Usuario 6: Yo como usuaria de la web de Ghibli, quiero saber mas detalles de los personajes de ghibli, donde pueda ver el total de género en cada película.
 
 7)Historia de Usuario 7: Yo como usuaria de la web de Ghibli, quiero ver estadísticas de directores, donde pueda saber de todos los directores , su mejor película votada y por ende quien tiene las mejores películas.
-### Diseño de la Interfaz de Usuario
 
-#### Prototipo de baja fidelidad
+## 5. Diseño de la Interfaz de Usuario
+
+### Prototipo de baja fidelidad
 ![prototipoinicial](https://user-images.githubusercontent.com/85115054/126575854-4df295bb-28b2-4327-9a66-763712800bb7.JPG)
 
 
-
-Durante tu trabajo deberás haber hecho e iterado bocetos (_sketches_) de tu
-solución usando papel y lápiz. Te recomendamos tomar fotos de todas las
-iteraciones que hagas, que las subas a tu repositorio y las menciones en tu
-`README.md`.
-
-#### Testeos de usabilidad
+### Testeos de usabilidad
 
 Se realizaron testeos de usabilidad por cada sprint, donde se pudo iterar el prototipo inicial, y adaptar el diseño a las necesidades del usuario .
 1)Se determino en un comienzo la implementacion de 3 vistas de informacion (una para pelicula,personajes,locaciones) sin estar conectadas entre si.Al moento de la presentacion del prototipo se decidio por cambiar a solo una pagina princiapl que mostrara todas las peliculas y que la informacion restante se visualizara al seleccionar la pelicula.
 2)La paleta de colores inicial se cambio a un tonalidad azul para identificarse con el logo de ghibli que es de ese color, ya que la paleta anterior no expresaba la identidad de la marca.
 3)La interactividad con los botones fue rediseñada para ofrecer al usurio una claridad de las opciones de interaccion con la pagina, para mejorar la experiencia de navegacion del usuario.
 
+### Prototipo Inicial Iterado
+
+![prtototipoiterado](https://user-images.githubusercontent.com/85115054/126878573-3134e8f4-435b-4e58-b20f-c4c3e0ffac37.JPG)
+
 #### Prototipo final
 
+![image](https://user-images.githubusercontent.com/85115054/126878685-731ec783-d327-49eb-bc18-5f3ee9bc1d2f.png)
 
+Puedes visitar nuestra pagina web en github pages agregado /src al final del link o ingresando a:
+https://pauladriana.github.io/LIM015-data-lovers/src/

@@ -89,16 +89,16 @@ a:hover{
     background-position: center;
 }
 .headergif.gif1 {
-    background-image: url("/src/multimedia/totoromovie.gif");
+    background-image: url("multimedia/totoromovie.gif");
 }
 .headergif.gif2 {
-    background-image: url("/src/multimedia/ponyomovie.gif");
+    background-image: url("multimedia/ponyomovie.gif");
 }
 .headergif.gif3 {
-    background-image: url("/src/multimedia/chihiromovie.gif");
+    background-image: url("multimedia/chihiromovie.gif");
 }
 .headergif.gif4 {
-    background-image: url("/src/multimedia/kikimovie.gif");
+    background-image: url("multimedia/kikimovie.gif");
 }
 
 main{
@@ -176,7 +176,7 @@ footer p{
 #ghibliphoto{
     margin-left: 50px;
     flex: 50%;
-    background-image: url("/src/multimedia/logototoro.png");
+    background-image: url("multimedia/logototoro.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -510,6 +510,7 @@ h3{
 
 .peliculas-recomendadas .contenedor-carousel .carousel .pelicula img {
 	width: 100%;
+    height: 100%;
 	vertical-align: top;
 }
 

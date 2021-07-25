@@ -1,4 +1,4 @@
-import data from './data/ghibli/ghibli.js';
+import data from '../src/data/ghibli/ghibli.js';
 import {filterByDirector, filterByProducer, ordenAlfaAtoZ, ordenAlfaZtoA, yearMovie, scoreMovie} from '../src/data.js';
 
 let films = data.films;
