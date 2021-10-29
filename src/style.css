@@ -288,6 +288,8 @@ ul , ol {
 
 #search-icon{
     width: 15px;
+    color: white;
+    font-size: 18px;
 
 }
 
@@ -295,6 +297,7 @@ ul , ol {
     background-color: transparent;
     border: none;
     outline: none;
+    color: white;
 }
 
 #filtertext{
