@@ -1,5 +1,6 @@
 # Data Lovers- Studio Ghibli
 
+**Puedes desplegar el proyecto en el siguiente link:** [Studio Ghibli](https://pauladriana.github.io/LIM015-data-lovers/src)
 ## Índice
 
 * [1. Preámbulo](#1-preámbulo)
